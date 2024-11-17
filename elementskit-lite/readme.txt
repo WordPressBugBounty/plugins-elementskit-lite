@@ -4,7 +4,7 @@ Tags: Elementor addons, mega menu builder,  header footer builder, elementor add
 Requires at least: 5.0
 Tested up to: 6.7
 Requires PHP: 7.4
-Stable tag: 3.3.1
+Stable tag: 3.3.2
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -440,6 +440,9 @@ Visit  [wpmet](https://wpmet.com/)  to learn more about how to get the best of W
 
 
 == Changelog ==
+ElementsKit Elementor Addons Version: 3.3.2 (2024-11-17)
+Improved: Countdown timer on expiry title sanitization
+
 ElementsKit Elementor Addons Version: 3.3.1 (2024-10-26)
 Added: `Interactive link` icon
 Improved: Use `<nav>` element instead of `<div>` in nav menu widget
