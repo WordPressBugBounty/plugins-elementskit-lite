@@ -491,7 +491,7 @@ class ElementsKit_Widget_Category_List extends Widget_Base {
 					<a href="<?php echo esc_url(get_category_link($post->term_id)); ?>" <?php echo $this->get_render_attribute_string('list_bg_' . $index); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Already escaped by elementor ?>>
                         <?php if (!empty($item['icons']['value'])) : ?>
                             <span class="elementor-icon-list-icon">
-								<?php \ElementsKit_Lite\Utils::icon($item['icons'], [ 'aria-hidden' => 'true' ]); ?>
+								<?php Icons_Manager::render_icon($item['icons'], [ 'aria-hidden' => 'true' ]); ?>
                             </span>
                         <?php endif; ?>
                         <span class="elementor-icon-list-text"><?php echo esc_html($text); ?></span>
