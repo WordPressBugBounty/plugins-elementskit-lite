@@ -4,7 +4,7 @@ Tags: Elementor addons, mega menu builder,  header footer builder, elementor add
 Requires at least: 6.0
 Tested up to: 6.7
 Requires PHP: 7.4
-Stable tag: 3.4.4
+Stable tag: 3.4.5
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -346,6 +346,11 @@ If you like using ElementsKit Elementor addon, then consider checking out our ot
 Visit  [wpmet](https://wpmet.com/)  to learn more about how to get the best of WordPress with  [Tutorials, Tips & Tricks](https://wpmet.com/blog)!
 
 == Changelog ==
+ElementsKit Elementor Addons Version: 3.4.5 (2025-03-09)
+Fixed: Date picker issue in DateTime control in widget builder
+Fixed: Add styles for swiper arrow buttons in image accordion widget
+Improved: Countdown timer widget DOM sanitization and escaping
+
 ElementsKit Elementor Addons Version: 3.4.4 (2025-02-16)
 Improved: Submenu indicators styling controls in nav menu widget
 Improved: Countdown timer widget sanitization and escaping
