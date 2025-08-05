@@ -4,7 +4,7 @@ Tags: Elementor addons, mega menu builder,  header footer builder, elementor add
 Requires at least: 6.0
 Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 3.5.6
+Stable tag: 3.6.0
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -198,17 +198,9 @@ Let's look at some of the best Elementor widgets in ElementsKit Premium version:
 
 ✅ [ **Motion Text** ](https://wpmet.com/plugin/elementskit/motion-text/?utm_source=org&utm_medium=readme) - Helps to display your text with various motion animations, with styles.
 
-✅ [ **WooCommerce Product List** ](https://wpmet.com/plugin/elementskit/woo-product-list/?utm_source=org&utm_medium=readme) - Display and design eCommerce product list easily.
-
-✅ [ **WooCommerce Product Carousel** ](https://wpmet.com/plugin/elementskit/woo-product-carousel/?utm_source=org&utm_medium=readme) - Show Woo products in functional and intuitive sliders.
-
-✅ [ **WooCommerce Category List** ](https://wpmet.com/plugin/elementskit/woo-category-list/?utm_source=org&utm_medium=readme) - Display Woo-Categories anywhere on the website.
-
-✅ [ **WooCommerce Mini Cart** ](https://wpmet.com/plugin/elementskit/woo-mini-cart/?utm_source=org&utm_medium=readme) Get customization options like the cart button, body, header, item, etc.
-
 ✅ [ **Advanced Toggle** ](https://wpmet.com/plugin/elementskit/advanced-toggle/?utm_source=org&utm_medium=readme) - Create amazing pricing tables, icon boxes, and packages and decorate them nicely.
 
-✅ [ **Vertical Mega Menu** ](https://products.wpmet.com/megamenu/?utm_source=org&utm_medium=readme) - Display Mega Menu vertically and customize the content easily.
+✅ [ **Vertical Mega Menu** ](https://products.wpmet.com/megamenu/?utm_source=org&utm_medium=readme) - Display Mega Menu vertically & customize the content easily with this mega menu builder addon.
 
 ✅ [ **Hotspot** ](https://wpmet.com/plugin/elementskit/hotspot/?utm_source=org&utm_medium=readme) - Identify a specific part of your image with a tooltip and reveal an associated text after clicking.
 
@@ -254,6 +246,10 @@ Add a customized list and improve visitors' engagement with your Elementor site.
 ✅ [**Interactive Links**](https://wpmet.com/plugin/elementskit/interactive-links/?utm_source=org&utm_medium=readme) - Clickable and animated links boosts user interactions.
 
 ✅ [**Advanced Search**](https://wpmet.com/plugin/elementskit/advanced-search/?utm_source=org&utm_medium=readme) - Design powerful live search panel to provide relevant search results.
+
+## WooCommerce Elementor Addon
+Display and design e-commerce products in a list and intuitive sliders, along with their categories and mini cart option, anywhere you want.
+**<strong></strong><br />🔶  [WooCommerce Product List](%28https://wpmet.com/plugin/elementskit/woo-product-list/?utm_source=org&utm_medium=readme%29) 🔶[WooCommerce Product Carousel](%28https://wpmet.com/plugin/elementskit/woo-product-carousel/?utm_source=org&utm_medium=readme%29) 🔶[WooCommerce Category List](%28https://wpmet.com/plugin/elementskit/woo-category-list/?utm_source=org&utm_medium=readme%29) 🔶[WooCommerce Mini Cart](%28https://wpmet.com/plugin/elementskit/woo-mini-cart/?utm_source=org&utm_medium=readme%29)**
 
 ### Effortless Integration with Different Social Platforms
 ElementsKit Pro is a complete Elementor social media addon that lets you showcase social media content, sharing options, and other helpful engagement features directly into your WordPress website. Web page visitors can see and connect with dominant social media platforms with the help of widgets like:
@@ -338,6 +334,13 @@ If you like using ElementsKit Elementor addon, then consider checking out our ot
 Visit  [wpmet](https://wpmet.com/?utm_source=org&utm_medium=readme)  to learn more about how to get the best of WordPress with  [Tutorials, Tips & Tricks](https://wpmet.com/blog)!
 
 == Changelog ==
+ElementsKit Elementor Addons Version: 3.6.0 (2025-08-05)
+Added: Accordion widget title and icon hover color controls
+Added: Button widget box shadow hover control
+Fixed: Post list widget icon list CSS loading issue
+Fixed: Advanced tabs widget tablet responsiveness issue
+Fixed: Pricing table widget button hover border issue
+
 ElementsKit Elementor Addons Version: 3.5.6 (2025-07-22)
 Improved: Some minor dashboard UI
 
