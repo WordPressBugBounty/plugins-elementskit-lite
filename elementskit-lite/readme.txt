@@ -4,7 +4,7 @@ Tags: Elementor addons, mega menu builder,  header footer builder, elementor add
 Requires at least: 6.0
 Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 3.6.0
+Stable tag: 3.6.1
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -16,7 +16,7 @@ Join millions who empower their websites with #1 Elementor addon - ElementsKit: 
 
 Everything is accessible through an easy drag-and-drop interface, including features like **header-footer builder, mega menu, widget builder,** and more to expand your Elementor capabilities.
 
-Besides exclusive features, ElementsKit offers exclusive functions and unique controls like Image Picker, Ajax Select2, and Advanced Widgets. It’s a versatile toolkit for building any website with Elementor.
+Besides exclusive features & templates, ElementsKit offers copy-paste across domains and control content visibility with multiple conditions. It’s a versatile design toolkit packed with advanced widgets for content, forms, posts, charts, WooCommerce, etc, perfect for building any Elementor site.
 
 🏆 Great **Elementor Addon**! Check [**ElementsKit demos**](https://wpmet.com/plugin/elementskit/elements/?utm_source=org&utm_medium=readme) for new website-building possibilities. 
 
@@ -32,7 +32,7 @@ https://www.youtube.com/watch?v=VhBl3dHT5SY
 
 ## KEY FEATURES
 
-🔥 All time **downloads of ElementsKit : 32,602,118** (32 million+ all time downloads).
+🔥 All time **downloads of ElementsKit : 38,274,411** (38 million+).
 
 ⭐ 90+ Free and Premium Widgets
 
@@ -80,7 +80,7 @@ ElementsKit is a modular-based plugin, meaning you only enable the features you 
 
 If you’re looking for a free Elementor addon, ElementsKit offers the best package in town, with **50+** widgets, **5+** modules, and professionally designed Elementor templates.
 
-✅[ **Heading** ](https://wpmet.com/plugin/elementskit/heading/?utm_source=org&utm_medium=readme)  - Design headings with multiple fancy, and custom styles.
+✅[ **Heading** ](https://wpmet.com/plugin/elementskit/heading/?utm_source=org&utm_medium=readme)  - Design headings with multiple fancy, and custom styles. (Free WordPress Header Footer Builder)
 
 ✅[ **Button** ](https://wpmet.com/plugin/elementskit/button/?utm_source=org&utm_medium=readme) - Add amazing buttons with text, color, CTA, etc.
 
@@ -226,8 +226,7 @@ Let's look at some of the best Elementor widgets in ElementsKit Premium version:
 
 ✅ [**Price Menu** ](https://wpmet.com/plugin/elementskit/price-menu/?utm_source=org&utm_medium=readme) - Make an appealing price menu to start and plan a business.
 
-✅[**Stylish List**](https://wpmet.com/plugin/elementskit/stylish-list/?utm_source=org&utm_medium=readme) - 
-Add a customized list and improve visitors' engagement with your Elementor site.
+✅[**Stylish List**](https://wpmet.com/plugin/elementskit/stylish-list/?utm_source=org&utm_medium=readme) - Add a customized list and improve visitors' engagement with your Elementor site.
 
 ✅ [**Team Carousel Slider**](https://wpmet.com/plugin/elementskit/team-slider/?utm_source=org&utm_medium=readme) - Introduce your team members pleasingly on a slider.
 
@@ -334,6 +333,10 @@ If you like using ElementsKit Elementor addon, then consider checking out our ot
 Visit  [wpmet](https://wpmet.com/?utm_source=org&utm_medium=readme)  to learn more about how to get the best of WordPress with  [Tutorials, Tips & Tricks](https://wpmet.com/blog)!
 
 == Changelog ==
+ElementsKit Elementor Addons Version: 3.6.1 (2025-08-13)
+Fixed: Image size not working in pricing table widget header
+Fixed: Limits of selective singular posts in header footer builder module
+
 ElementsKit Elementor Addons Version: 3.6.0 (2025-08-05)
 Added: Accordion widget title and icon hover color controls
 Added: Button widget box shadow hover control
