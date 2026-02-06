@@ -33,7 +33,7 @@ class Enqueue_Scripts {
 
 		return false;
 	}
-    
+
     public function elementor_js() {
         // Register Scripts
         // size : 814 biyets ** used for back to top button circle progress bar
@@ -79,13 +79,13 @@ class Enqueue_Scripts {
         if(is_admin()){
             return;
         }
-            
+
         /*
         * Register scripts.
         * This scripts are only loaded when the associated widget is being used on a page.
         */
         wp_enqueue_script( 'ekit-widget-scripts', \ElementsKit_Lite::widget_url() . 'init/assets/js/widget-scripts.js', array( 'jquery' ), \ElementsKit_Lite::version(), true ); // Core most of the widgets init are bundled //
-        wp_register_script( 'goodshare', \ElementsKit_Lite::widget_url() . 'init/assets/js/goodshare.min.js', array( 'jquery' ), \ElementsKit_Lite::version(), true ); // sosial share //       
+        wp_register_script( 'goodshare', \ElementsKit_Lite::widget_url() . 'init/assets/js/goodshare.min.js', array( 'jquery' ), \ElementsKit_Lite::version(), true ); // sosial share //
         wp_register_script( 'datatables', \ElementsKit_Lite::widget_url() . 'init/assets/js/datatables.min.js', array( 'jquery' ), \ElementsKit_Lite::version(), true ); // table //
 
         $user_data = Attr::instance()->utils->get_option('user_data', []);
@@ -102,7 +102,7 @@ class Enqueue_Scripts {
             wp_enqueue_style( 'ekit-widget-styles', \ElementsKit_Lite::widget_url() . 'init/assets/css/widget-styles.css', [], \ElementsKit_Lite::version() );
 
             wp_enqueue_style( 'ekit-responsive', \ElementsKit_Lite::widget_url() . 'init/assets/css/responsive.css', [], \ElementsKit_Lite::version() );
-            
+
             // style for funfact odometer
             wp_register_style( 'odometer', \ElementsKit_Lite::widget_url() . 'init/assets/css/odometer-theme-default.css', [], \ElementsKit_Lite::version() );
         };

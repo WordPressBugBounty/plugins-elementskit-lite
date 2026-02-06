@@ -94,7 +94,7 @@ class Init {
 					$extra_classes = trim($extra_classes);
 
 					// If we have extra classes, add them to the generated icon HTML
-					if (!empty($extra_classes)) {
+					if (!empty($extra_classes) && !empty($get_icon)) {
 						// Add extra classes to the generated icon
 						$get_icon = str_replace('class="', 'class="' . $extra_classes . ' ', $get_icon);
 					}
@@ -127,7 +127,7 @@ class Init {
 		}
 
 		$icons = json_decode($get_file_content, true);
-		$icon_name = str_replace('icon icon-', '', strtolower($icon['value']));
+		$icon_name = str_replace('icon icon-', '', $icon['value']);
 		$svg = isset($icons[$icon_name]) ? $icons[$icon_name] : false;
 
 		if ( empty($svg['paths']) ) {

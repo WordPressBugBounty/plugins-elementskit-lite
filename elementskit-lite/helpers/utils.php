@@ -308,9 +308,8 @@ class Utils {
 		}
 	}
 
-	public static function render_elementor_content( $content_id ) {
+	public static function render_elementor_content( $content_id, $has_css = false ) {
 		$elementor_instance = \Elementor\Plugin::instance();
-		$has_css            = false;
 
 		/**
 		 * CSS Print Method Internal and Exteral option support for Header and Footer Builder.
@@ -408,17 +407,23 @@ class Utils {
 	* @param string $post_type Post type. Default 'page'.
 	* @return WP_Post|null     WP_Post object if found, null otherwise.
 	*/
-	public static function get_page_by_title( string $slug, string $post_type = 'page' ): ?\WP_Post {
-		$query = new \WP_Query(
+	public static function get_page_by_title( $slug, $post_type = 'page' ) {
+		$posts = get_posts(
 			[
-				'post_type'      => $post_type,
-				'name'           => $slug,
-				'posts_per_page' => 1,
-				'post_status'    => 'publish',
+				'name' => $slug,
+				'post_type' => $post_type,
+				'post_status' => 'publish',
+				'numberposts' => 1,
+				'no_found_rows' => true,
+				'ignore_sticky_posts' => true,
 			]
 		);
 
-		return $query->posts[0] ?? null;
+		if ( ! empty( $posts ) ) {
+			return $posts[0];
+		}
+
+		return null;
 	}
 
 	public static function remove_special_chars($string) {
