@@ -11,7 +11,6 @@ class Enqueue_Scripts {
 		add_action( 'elementor/frontend/after_enqueue_scripts', [$this, 'enqueue_scripts'] );
 
 		add_action( 'elementor/frontend/after_register_styles', [$this, 'register_frontend_css'] );
-		// add_action( 'elementor/frontend/after_enqueue_styles', [$this, 'enqueue_frontend_css'] );
 		add_action( 'wp_enqueue_scripts', [$this, 'enqueue_frontend_css'], 99 );
 
 		add_action( 'elementor/preview/enqueue_styles', [ $this, 'enqueue_3rd_party_style' ] );
@@ -91,10 +90,19 @@ class Enqueue_Scripts {
 	public function enqueue_scripts() {
 		// Enqueue Scripts
 		wp_enqueue_script( 'elementskit-elementor', \ElementsKit_Lite::widget_url() . 'init/assets/js/elementor.js', ['jquery', 'elementor-frontend'], \ElementsKit_Lite::version(), true );
-		wp_localize_script( 'elementskit-elementor', 'ekit_config', [
-			'ajaxurl'   => admin_url( 'admin-ajax.php' ),
-			'nonce'     => wp_create_nonce( 'ekit_pro' ),
-		] );
+
+		/**
+         * Localize frontend configuration for ElementsKit.
+         */
+        $config = apply_filters(
+            'elementskit/common/localize_settings',
+            [
+                'ajaxurl' => admin_url( 'admin-ajax.php' ),
+                'nonce'   => wp_create_nonce( 'ekit_pro' ),
+            ]
+        );
+
+        wp_localize_script( 'elementskit-elementor', 'ekit_config', $config );
 
 		// compatibility
 		if($this->is_plugin_active('elementskit/elementskit.php') && version_compare(\Elementskit::version(), '3.2.0', '<=')) {
@@ -127,10 +135,6 @@ class Enqueue_Scripts {
 	}
 
 	public function enqueue_frontend_css() {
-		if ( ! wp_style_is( 'elementor-frontend', 'enqueued' ) ) {
-			return;
-		}
-
 		// main styles
 		wp_enqueue_style( 'ekit-widget-styles', \ElementsKit_Lite::widget_url() . 'init/assets/css/widget-styles.css', [], \ElementsKit_Lite::version() );
 		wp_enqueue_style( 'ekit-responsive', \ElementsKit_Lite::widget_url() . 'init/assets/css/responsive.css', [], \ElementsKit_Lite::version() );
