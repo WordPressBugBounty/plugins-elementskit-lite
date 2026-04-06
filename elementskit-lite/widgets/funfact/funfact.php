@@ -645,7 +645,7 @@ class ElementsKit_Widget_Funfact extends Widget_Base {
 				'default'   => '',
 				'selectors' => [
 					'{{WRAPPER}} .elementskit-funfact .elementskit-funfact-icon' => 'color: {{VALUE}};',
-					'{{WRAPPER}} .elementskit-funfact .funfact-icon svg'    => 'color: {{VALUE}};',
+					'{{WRAPPER}} .elementskit-funfact .funfact-icon svg'    => 'fill: {{VALUE}};',
 				],
 			]
 		);

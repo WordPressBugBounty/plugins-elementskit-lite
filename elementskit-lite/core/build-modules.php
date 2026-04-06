@@ -31,6 +31,11 @@ class Build_Modules {
 		$this->modules = \ElementsKit_Lite\Config\Module_List::instance()->get_list( 'active' );
 
 		foreach ( $this->modules as $module_slug => $module ) {
+			// Check tier access
+			if ( isset( $module['tier'] ) && ! \ElementsKit_Lite\Utils::is_tier( $module['tier'] ) ) {
+				continue;
+			}
+
 			if ( isset( $module['path'] ) ) {
 				include_once $module['path'] . 'init.php';
 			}

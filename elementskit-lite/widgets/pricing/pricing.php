@@ -1932,7 +1932,7 @@ class ElementsKit_Widget_Pricing extends Widget_Base {
 				],
 				'default' => 'solid',
 				'condition' => [
-					'list_divider' => 'yes',
+					'ekit_pricing_list_divider' => 'yes',
 				],
 				'selectors' => [
 					'{{WRAPPER}} .elementskit-single-pricing .elementskit-pricing-lists li' => 'border-top-style: {{VALUE}};',

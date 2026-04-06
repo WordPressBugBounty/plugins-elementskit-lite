@@ -28,7 +28,8 @@ $x = \ElementsKit_Lite\Libs\Framework\Attr::instance()->utils->get_option( 'modu
 					$module_config['package'] = ''; // for avoiding error when add module from theme
 				}
 
-				$data_attr = ( $module_config['package'] != 'pro-disabled' ? '' : 'data-attr-toggle="modal" data-target="#elementskit_go_pro_modal"' );
+				$is_disabled = \ElementsKit_Lite\Utils::is_feature_disabled( $module_config );
+				$data_attr = ( ! $is_disabled ? '' : 'data-attr-toggle="modal" data-target="#elementskit_go_pro_modal"' );
 
 				// Skip upcoming modules
 				$attributes = isset($module_config['attributes']) ? $module_config['attributes'] : array();
@@ -36,15 +37,15 @@ $x = \ElementsKit_Lite\Libs\Framework\Attr::instance()->utils->get_option( 'modu
 					continue;
 				}
 				?>
-				<div class="attr-col-md-6 attr-col-lg-4" <?php echo esc_attr($data_attr); ?>>
+				<div class="attr-col-md-6 attr-col-lg-4" <?php echo ( ! $is_disabled ? '' : 'data-attr-toggle="modal" data-target="#elementskit_go_pro_modal"' ); ?>>
 					<?php
 					$this->utils->input(
 						array(
 							'type'    => 'switch',
 							'name'    => 'module_list[]',
 							'value'   => $module,
-							'class'   => 'ekit-content-type-' . $module_config['package'],
-							'attr'    => ( $module_config['package'] != 'pro-disabled' ? array() : array( 'disabled' => 'disabled' ) ),
+							'class'   => 'ekit-content-type-' . ( $is_disabled ? 'pro-disabled' : $module_config['package'] ),
+							'attr'    => ( ! $is_disabled ? array() : array( 'disabled' => 'disabled' ) ),
 							'label'   => $module_config['title'],
 							'options' => array(
 								'checked' => ( isset( $modules_active[ $module ] ) ? true : false ),

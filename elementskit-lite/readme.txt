@@ -4,7 +4,7 @@ Tags: Elementor addons, mega menu builder,  header footer builder, elementor add
 Requires at least: 6.0
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 3.8.2
+Stable tag: 3.9.0
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -341,6 +341,18 @@ Visit  [wpmet](https://wpmet.com/?utm_source=org&utm_medium=readme)  for essenti
 
 == Changelog ==
 
+= ElementsKit Elementor Addons Version: 3.9.0 (2026-04-06) =
+* Added: Social container padding control in team widget
+* Fixed: pricing table listed issues
+* Fixed: Pricing table widget divider controller issue
+* Fixed: Svg icon styles are not working for team widget
+* Fixed: Page scrolled to top when popup open in team widget
+* Fixed: Funfact widget icon color not changing
+* Fixed: Video widget popup close button styling issues
+* Fixed: TablePress widget rendering issue
+* Fixed: TablePress widget styles are not working
+* Improved: Widget builder security
+
 = ElementsKit Elementor Addons Version: 3.8.2 (2026-03-12) =
 * Fixed: Nav menu styling issue on single pages in certain cases
 
@@ -565,109 +577,109 @@ Visit  [wpmet](https://wpmet.com/?utm_source=org&utm_medium=readme)  for essenti
 * Fixed: Display different logo on hover not working in testimonial widget
 * Fixed: Undefined array key warning in pie chart widget
 
-ElementsKit Elementor Addons Version: 3.2.6 (2024-08-22)
-Improved: Data migration conditions
-Removed: Edit with EmailKit button from WooCommerce email settings
+= ElementsKit Elementor Addons Version: 3.2.6 (2024-08-22) =
+* Improved: Data migration conditions
+* Removed: Edit with EmailKit button from WooCommerce email settings
 
-ElementsKit Elementor Addons Version: 3.2.5 (2024-08-13)
-Fixed: Element caching compatibility
+= ElementsKit Elementor Addons Version: 3.2.5 (2024-08-13) =
+* Fixed: Element caching compatibility
 
-ElementsKit Elementor Addons Version: 3.2.4 (2024-08-12)
-Fixed: Corrected lottie loop count handling
-Fixed: Korean language admin page display issue
+= ElementsKit Elementor Addons Version: 3.2.4 (2024-08-12) =
+* Fixed: Corrected lottie loop count handling
+* Fixed: Korean language admin page display issue
 
-ElementsKit Elementor Addons Version: 3.2.3 (2024-07-27)
-Added: Support for `is_dynamic_content()`
+= ElementsKit Elementor Addons Version: 3.2.3 (2024-07-27) =
+* Added: Support for `is_dynamic_content()`
 
-ElementsKit Elementor Addons Version: 3.2.2 (2024-07-24)
-Fixed: Warning notice on block editor
+= ElementsKit Elementor Addons Version: 3.2.2 (2024-07-24) =
+* Fixed: Warning notice on block editor
 
-ElementsKit Elementor Addons Version: 3.2.1 (2024-07-15)
-Improved: Widget area method ajax security
-Fixed: Remove unused code for client logo `arrow typography` and add condition for position `popover toggle`
+= ElementsKit Elementor Addons Version: 3.2.1 (2024-07-15) =
+* Improved: Widget area method ajax security
+* Fixed: Remove unused code for client logo `arrow typography` and add condition for position `popover toggle`
 Fixed: Funfact widget text alignment issue
 
-ElementsKit Elementor Addons Version: 3.2.0 (2024-06-09)
-Improved: Enhanced security in dynamic content module
-Improved: Performance in dynamic content module
-Fixed: Missing string translation issue
-Fixed: Compatibility issue between team widget popup and elementor loop carousel
-Fixed: Template library button compatibility with container
-Fixed: Minor bugs & improvements
+= ElementsKit Elementor Addons Version: 3.2.0 (2024-06-09) =
+* Improved: Enhanced security in dynamic content module
+* Improved: Performance in dynamic content module
+* Fixed: Missing string translation issue
+* Fixed: Compatibility issue between team widget popup and elementor loop carousel
+* Fixed: Template library button compatibility with container
+* Fixed: Minor bugs & improvements
 
-ElementsKit Elementor Addons Version: 3.1.4 (2024-05-20)
-Improved: Social share widget `crawlable` for SEO
-Fixed: Page list widget 'nofollow' issue
-Fixed: Elementor popup not working inside advanced widget
+= ElementsKit Elementor Addons Version: 3.1.4 (2024-05-20) =
+* Improved: Social share widget `crawlable` for SEO
+* Fixed: Page list widget 'nofollow' issue
+* Fixed: Elementor popup not working inside advanced widget
 
-ElementsKit Elementor Addons Version: 3.1.3 (2024-04-28)
-Improved: Image accordion widget sanitization
-Fixed: Nav menu widget indicator responsive issue
+= ElementsKit Elementor Addons Version: 3.1.3 (2024-04-28) =
+* Improved: Image accordion widget sanitization
+* Fixed: Nav menu widget indicator responsive issue
 
-ElementsKit Elementor Addons Version: 3.1.2 (2024-04-22)
-Fixed: Add new form button compatibility with gravity form
-Fixed: Template select field not working in protected content widget
+= ElementsKit Elementor Addons Version: 3.1.2 (2024-04-22) =
+* Fixed: Add new form button compatibility with gravity form
+* Fixed: Template select field not working in protected content widget
 
-ElementsKit Elementor Addons Version: 3.1.1 (2024-04-15)
-Improved: Onepage scroll module sanitization
+= ElementsKit Elementor Addons Version: 3.1.1 (2024-04-15) =
+* Improved: Onepage scroll module sanitization
 
-ElementsKit Elementor Addons Version: 3.1.0 (2024-03-31)
-Fixed: Contact form 7 widget textarea font size doesn't work
-Fixed: AJAX loading issue on advanced tab and accordion
-Fixed: Nav menu widget sub menu indicator issue
-Fixed: Conflict between search and video widget
-Fixed: Minor bug & improvements
+= ElementsKit Elementor Addons Version: 3.1.0 (2024-03-31) =
+* Fixed: Contact form 7 widget textarea font size doesn't work
+* Fixed: AJAX loading issue on advanced tab and accordion
+* Fixed: Nav menu widget sub menu indicator issue
+* Fixed: Conflict between search and video widget
+* Fixed: Minor bug & improvements
 
-ElementsKit Elementor Addons Version: 3.0.7 (2024-03-17)
-Improved: Button widget sanitization
-Fixed: Link not working in blog posts widget
-Fixed: Nav menu widget sub menu indicator issue
-Fixed: Popup conflict between search and video widget
-Fixed: AJAX Loading issue on advanced tab and accordion
-Fixed: Minor bug & improvements
+= ElementsKit Elementor Addons Version: 3.0.7 (2024-03-17) =
+* Improved: Button widget sanitization
+* Fixed: Link not working in blog posts widget
+* Fixed: Nav menu widget sub menu indicator issue
+* Fixed: Popup conflict between search and video widget
+* Fixed: AJAX Loading issue on advanced tab and accordion
+* Fixed: Minor bug & improvements
 
-ElementsKit Elementor Addons Version: 3.0.6 (2024-03-05)
-Improved: Testimonial and image accordion widget sanitization
+= ElementsKit Elementor Addons Version: 3.0.6 (2024-03-05) =
+* Improved: Testimonial and image accordion widget sanitization
 
-ElementsKit Elementor Addons Version: 3.0.5 (2024-02-27)
-Fixed: Dynamic tag isn't working for media in image comparison widget
-Fixed: Minor bug & improvements
+= ElementsKit Elementor Addons Version: 3.0.5 (2024-02-27) =
+* Fixed: Dynamic tag isn't working for media in image comparison widget
+* Fixed: Minor bug & improvements
 
-ElementsKit Elementor Addons Version: 3.0.4 (2023-12-18)
-Fixed: Mailchimp integration compatibility
-Added: New zoom data fields due to JWT deprecation
-Improved: Removed unnecessary code and enhance security measures
+= ElementsKit Elementor Addons Version: 3.0.4 (2023-12-18) =
+* Fixed: Mailchimp integration compatibility
+* Added: New zoom data fields due to JWT deprecation
+* Improved: Removed unnecessary code and enhance security measures
 
-ElementsKit Elementor Addons Version: 3.0.3 (2023-11-27)
-Fixed: Improve accessibility, performance, and security practices with 10up/plugin-check tool
-Fixed: Optimize testimonial widget markup for improved performance
-Fixed: Resolve testimonial conditional issue and align control
-Added: Header offcanvas close button text control
-Fixed: Client logo widget nav SVG support
+= ElementsKit Elementor Addons Version: 3.0.3 (2023-11-27) =
+* Fixed: Improve accessibility, performance, and security practices with 10up/plugin-check tool
+* Fixed: Optimize testimonial widget markup for improved performance
+* Fixed: Resolve testimonial conditional issue and align control
+* Added: Header offcanvas close button text control
+* Fixed: Client logo widget nav SVG support
 
-ElementsKit Elementor Addons Version: 3.0.2 (2023-11-08)
-Fixed: Fix ajax loading icon issue for nav menu widget
-Fixed: Team widget popup compatibility with elementor loop grid widget
-Improved: Pricing table widget control type for custom ordering
+= ElementsKit Elementor Addons Version: 3.0.2 (2023-11-08) =
+* Fixed: Fix ajax loading icon issue for nav menu widget
+* Fixed: Team widget popup compatibility with elementor loop grid widget
+* Improved: Pricing table widget control type for custom ordering
 
-ElementsKit Elementor Addons Version: 3.0.1 (2023-11-05)
-Fixed: PHP notice at onepage scroll module
+= ElementsKit Elementor Addons Version: 3.0.1 (2023-11-05) =
+* Fixed: PHP notice at onepage scroll module
 
-ElementsKit Elementor Addons Version: 3.0.0 (2023-10-04)
-Fixed: Header search accessibility issue
-Fixed: Post tab click issue
-Fixed: Adding dynamic width with ekit layout library
-Fixed: PHPCS issue and resolved the warnings
-Fixed: Video widget duration control issue
-Fixed: Icon box widget custom attributes issue
-Fixed: Piechart widget global color issue
-Fixed: Nav menu justify align space between issue
-Fixed: Nav menu widget textdoamin
-Fixed: Testimonial widget layout breaking when link enable
-Added: Submenu indicator font size control for nav menu widget
+= ElementsKit Elementor Addons Version: 3.0.0 (2023-10-04) =
+* Fixed: Header search accessibility issue
+* Fixed: Post tab click issue
+* Fixed: Adding dynamic width with ekit layout library
+* Fixed: PHPCS issue and resolved the warnings
+* Fixed: Video widget duration control issue
+* Fixed: Icon box widget custom attributes issue
+* Fixed: Piechart widget global color issue
+* Fixed: Nav menu justify align space between issue
+* Fixed: Nav menu widget textdoamin
+* Fixed: Testimonial widget layout breaking when link enable
+* Added: Submenu indicator font size control for nav menu widget
 
-ElementsKit Elementor Addons Version: 2.9.2 (2023-08-27)
-Improved: Access control security
+= ElementsKit Elementor Addons Version: 2.9.2 (2023-08-27) =
+* Improved: Access control security
 
 ElementsKit Elementor Addons Version: 2.9.0 (2023-06-21)
 Added: Category filter in Post List Widget. [Preview](https://d.pr/i/RMPS8A)

@@ -387,22 +387,11 @@ class Utils {
 		return 'ekit-main-swiper swiper';
 	}
 
-
 	/**
 	* Get a page/post by slug (new method).
 	*
-	* 🚀 New Code (preferred):
-	* - Uses post slug instead of post title.
-	* - More reliable because titles can change or contain duplicates, while slugs are unique per post type.
-	*
-	* 🕑 Migration Plan:
-	* - Keep the old `get_page_by_title()` method for the next 5–10 releases as a fallback.
-	* - If this slug-based approach proves stable, we will fully remove the title-based method afterwards.
-	* - If slug lookups fail in some use cases, we will continue to keep the title-based code.
-	*
-	* @introduced: 2025-09-01
-	* @issue: https://tree.taiga.io/project/wpmet-elementskit/issue/219
 	* @since 3.6.1
+	*
 	* @param string $slug      Post slug.
 	* @param string $post_type Post type. Default 'page'.
 	* @return WP_Post|null     WP_Post object if found, null otherwise.
@@ -439,7 +428,7 @@ class Utils {
 	 * @since 3.7.8
 	 *
 	 * @param string $plugin_file Plugin file path relative to the plugins directory.
-	 *                            Example: 'elementskit/elementskit.php'.
+	 * Example: 'elementskit/elementskit.php'.
 	 *
 	 * @return bool True if the plugin is active, false otherwise.
 	 */
@@ -461,4 +450,75 @@ class Utils {
 		return in_array( $plugin_file, $active_plugins, true );
 	}
 
+	/**
+	 * Get the current license tier.
+	 * Automatically resolves legacy 'pro' tier based on payment ID.
+	 *
+	 * @return string The current license tier ('free', 'personal', 'professional', 'agency').
+	 */
+	public static function get_tier(): string {
+		// No paid tier without an active pro plugin
+		if ( ! self::ekit_is_plugin_active( 'elementskit/elementskit.php' ) ) {
+			return 'free';
+		}
+
+		$tier = get_option( '__ekit_package_info__', 'free' );
+
+		// Resolve legacy pro tier
+		if ( $tier === 'free' ) {
+			$payment_id = get_option( '__ekit_payment_id__', false );
+			if ( $payment_id && $payment_id < 238012 ) {
+				return 'agency';
+			}
+		}
+
+		return $tier;
+	}
+
+	/**
+	 * Check if the current license tier meets the minimum required tier.
+	 *
+	 * @param string $min_tier The minimum tier required.
+	 * @return bool True if the current tier is >= the required tier.
+	 */
+	public static function is_tier( string $min_tier ): bool {
+		$current = self::get_tier();
+		$priority = ['free', 'personal', 'professional', 'agency'];
+
+		$current_rank = array_search( $current, $priority, true );
+		$required_rank = array_search( $min_tier, $priority, true );
+
+		// If either tier is unrecognized, deny access
+		if ( $current_rank === false || $required_rank === false ) {
+			return false;
+		}
+
+		return $current_rank >= $required_rank;
+	}
+
+	/**
+	 * Check if a widget/module config is disabled for the current user.
+	 *
+	 * A widget is disabled if:
+	 * - Its package is 'pro-disabled' (pro plugin not installed), OR
+	 * - It has a 'tier' requirement that the current tier doesn't meet.
+	 *
+	 * @since 3.8.1
+	 *
+	 * @param array $config Widget or module config array.
+	 * @return bool True if the item is disabled/inaccessible.
+	 */
+	public static function is_feature_disabled( array $config ): bool {
+		// Pro plugin not installed
+		if ( isset( $config['package'] ) && $config['package'] === 'pro-disabled' ) {
+			return true;
+		}
+
+		// Pro plugin installed but tier is insufficient
+		if ( isset( $config['tier'] ) && ! self::is_tier( $config['tier'] ) ) {
+			return true;
+		}
+
+		return false;
+	}
 }
