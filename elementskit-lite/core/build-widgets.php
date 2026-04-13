@@ -30,12 +30,8 @@ class Build_Widgets {
 		add_action( 'elementor/widgets/register', array( $this, 'register_widget' ) );
 	}
 
-	public function add_widget( $widget_config ) {
-		// Check tier access
-		if ( isset( $widget_config['tier'] ) && ! \ElementsKit_Lite\Utils::is_tier( $widget_config['tier'] ) ) {
-			return;
-		}
 
+	public function add_widget( $widget_config ) {
 		$widget_dir = (
 			isset( $widget_config['path'] )
 			? $widget_config['path']
@@ -88,6 +84,7 @@ class Build_Widgets {
 			add_action( 'init', array( $handler_class, 'wp_init' ) );
 		}
 	}
+
 
 	public function register_widget( $widgets_manager ) {
 		foreach ( $this->widgets as $widget_slug => $widget ) {

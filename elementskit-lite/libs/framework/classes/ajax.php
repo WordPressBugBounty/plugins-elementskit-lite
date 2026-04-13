@@ -32,7 +32,7 @@ class Ajax {
 			$widget_prepared_list = array();
 
 			foreach ( $widget_list as $widget_slug => $widget ) {
-				if ( \ElementsKit_Lite\Utils::is_feature_disabled( $widget ) ) {
+				if ( isset( $widget['package'] ) && $widget['package'] == 'pro-disabled' ) {
 					continue;
 				}
 
@@ -53,7 +53,7 @@ class Ajax {
 			$module_prepared_list = array();
 
 			foreach ( $module_list as $module_slug => $module ) {
-				if ( \ElementsKit_Lite\Utils::is_feature_disabled( $module ) ) {
+				if ( isset( $module['package'] ) && $module['package'] == 'pro-disabled' ) {
 					continue;
 				}
 

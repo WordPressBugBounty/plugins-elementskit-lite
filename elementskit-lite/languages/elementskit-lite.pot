@@ -2,9 +2,9 @@
 # This file is distributed under the GPLv3 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: ElementsKit Lite 3.9.0\n"
+"Project-Id-Version: ElementsKit Lite 3.9.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/elementskit-lite\n"
-"POT-Creation-Date: 2026-04-06 06:19:30+00:00\n"
+"POT-Creation-Date: 2026-04-13 09:54:44+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -41,31 +41,25 @@ msgstr ""
 msgid "6"
 msgstr ""
 
-#: core/editor-promotion.php:40
+#: core/editor-promotion.php:30
 msgid "%s Widget"
 msgstr ""
 
-#: core/editor-promotion.php:43
-msgid ""
-"The %1$s widget requires a %2$s or higher plan. Upgrade your current %3$s "
-"plan to access this widget and other advanced features."
-msgstr ""
-
-#: core/editor-promotion.php:49
+#: core/editor-promotion.php:32
 msgid ""
 "Unlock the %s widget and dozens of powerful ElementsKit Pro features to "
 "design faster, smarter, and more flexible websites."
 msgstr ""
 
-#: core/editor-promotion.php:53 core/editor-promotion.php:87
+#: core/editor-promotion.php:36 core/editor-promotion.php:67
 msgid "Upgrade Now"
 msgstr ""
 
-#: core/editor-promotion.php:86
+#: core/editor-promotion.php:66
 msgid "Pro Feature"
 msgstr ""
 
-#: core/editor-promotion.php:88 libs/forms/pages/template.php:30
+#: core/editor-promotion.php:68 libs/forms/pages/template.php:30
 msgid "Learn More"
 msgstr ""
 
@@ -319,7 +313,6 @@ msgstr ""
 
 #: libs/forms/pages/template.php:389
 #: libs/framework/views/layout-settings.php:39
-#: libs/pro-label/views/modal.php:27
 msgid "Go Premium"
 msgstr ""
 
@@ -945,8 +938,8 @@ msgstr ""
 #: widgets/blog-posts/blog-posts.php:1295
 #: widgets/header-info/header-info.php:195 widgets/icon-box/icon-box.php:975
 #: widgets/image-box/image-box.php:444 widgets/image-box/image-box.php:488
-#: widgets/pricing/pricing.php:281 widgets/tab/tab.php:773
-#: widgets/tab/tab.php:846 widgets/team/team.php:2088
+#: widgets/pricing/pricing.php:281 widgets/tab/tab.php:774
+#: widgets/tab/tab.php:848 widgets/team/team.php:2088
 msgid "Icon Color"
 msgstr ""
 
@@ -1202,34 +1195,6 @@ msgstr ""
 msgid "These are absolute FREE to use."
 msgstr ""
 
-#: libs/pro-label/views/modal.php:9
-msgid "Activate Your License"
-msgstr ""
-
-#: libs/pro-label/views/modal.php:12
-#. translators: %1$s: opening anchor tag, %2$s: closing anchor tag
-msgid ""
-"ElementsKit Pro is installed but your license is not activated. Please "
-"%1$sactivate your license%2$s to unlock all pro features."
-msgstr ""
-
-#: libs/pro-label/views/modal.php:18
-msgid "Upgrade Your Plan"
-msgstr ""
-
-#: libs/pro-label/views/modal.php:21
-#. translators: %1$s: current tier name, %2$s: opening anchor tag, %3$s:
-#. closing anchor tag
-msgid ""
-"Your current %1$s plan doesn't include this feature. %2$sUpgrade your "
-"plan%3$s to unlock this and other advanced features."
-msgstr ""
-
-#: libs/pro-label/views/modal.php:30
-#. translators: %1$s: opening anchor tag, %2$s: closing anchor tag
-msgid "Purchase our %1$spro version%2$s to unlock these premium features!"
-msgstr ""
-
 #: libs/stories/stories.php:252
 msgid "Wpmet Stories"
 msgstr ""
@@ -1386,7 +1351,7 @@ msgstr ""
 #: widgets/fluent-forms/fluent-forms.php:1700
 #: widgets/fluent-forms/fluent-forms.php:1899 widgets/nav-menu/nav-menu.php:585
 #: widgets/nav-menu/nav-menu.php:925 widgets/post-tab/post-tab.php:282
-#: widgets/tab/tab.php:829 widgets/testimonial/testimonial.php:823
+#: widgets/tab/tab.php:830 widgets/testimonial/testimonial.php:823
 #: widgets/testimonial/testimonial.php:1226
 #: widgets/testimonial/testimonial.php:2005
 msgid "Active"
@@ -1996,7 +1961,7 @@ msgstr ""
 #: widgets/page-list/page-list.php:601 widgets/page-list/page-list.php:967
 #: widgets/post-list/post-list.php:383 widgets/post-list/post-list.php:786
 #: widgets/pricing/pricing.php:1511 widgets/pricing/pricing.php:1581
-#: widgets/tab/tab.php:165 widgets/tab/tab.php:1166 widgets/tab/tab.php:1535
+#: widgets/tab/tab.php:165 widgets/tab/tab.php:1167 widgets/tab/tab.php:1536
 #: widgets/testimonial/testimonial.php:161
 #: widgets/testimonial/testimonial.php:871
 #: widgets/testimonial/testimonial.php:1727
@@ -2041,8 +2006,8 @@ msgstr ""
 #: widgets/social/social.php:142 widgets/social/social.php:398
 #: widgets/social-share/social-share.php:148
 #: widgets/social-share/social-share.php:433 widgets/tab/tab.php:163
-#: widgets/tab/tab.php:277 widgets/tab/tab.php:307 widgets/tab/tab.php:1075
-#: widgets/tab/tab.php:1196 widgets/tab/tab.php:1566
+#: widgets/tab/tab.php:277 widgets/tab/tab.php:307 widgets/tab/tab.php:1076
+#: widgets/tab/tab.php:1197 widgets/tab/tab.php:1567
 #: widgets/tablepress/tablepress.php:153 widgets/tablepress/tablepress.php:179
 #: widgets/team/team.php:520 widgets/team/team.php:692
 #: widgets/team/team.php:1056 widgets/team/team.php:1562
@@ -2710,10 +2675,10 @@ msgstr ""
 #: widgets/post-list/post-list.php:508 widgets/post-list/post-list.php:800
 #: widgets/post-tab/post-tab.php:141 widgets/post-tab/post-tab.php:240
 #: widgets/post-tab/post-tab.php:301 widgets/progressbar/progressbar.php:173
-#: widgets/tab/tab.php:572 widgets/tab/tab.php:786 widgets/tab/tab.php:858
-#: widgets/tab/tab.php:1033 widgets/tab/tab.php:1154 widgets/tab/tab.php:1314
-#: widgets/tab/tab.php:1598 widgets/tab/tab.php:1622 widgets/tab/tab.php:1838
-#: widgets/tab/tab.php:1862 widgets/tablepress/tablepress.php:313
+#: widgets/tab/tab.php:572 widgets/tab/tab.php:787 widgets/tab/tab.php:859
+#: widgets/tab/tab.php:1034 widgets/tab/tab.php:1155 widgets/tab/tab.php:1315
+#: widgets/tab/tab.php:1599 widgets/tab/tab.php:1623 widgets/tab/tab.php:1839
+#: widgets/tab/tab.php:1863 widgets/tablepress/tablepress.php:313
 #: widgets/tablepress/tablepress.php:500 widgets/tablepress/tablepress.php:547
 #: widgets/tablepress/tablepress.php:634 widgets/team/team.php:567
 #: widgets/team/team.php:592 widgets/team/team.php:778
@@ -2828,8 +2793,8 @@ msgstr ""
 #: widgets/pricing/pricing.php:1235 widgets/social/social.php:249
 #: widgets/social/social.php:328 widgets/social-share/social-share.php:284
 #: widgets/social-share/social-share.php:363 widgets/tab/tab.php:521
-#: widgets/tab/tab.php:619 widgets/tab/tab.php:795 widgets/tab/tab.php:867
-#: widgets/tab/tab.php:1351 widgets/tab/tab.php:1636 widgets/tab/tab.php:2034
+#: widgets/tab/tab.php:619 widgets/tab/tab.php:796 widgets/tab/tab.php:868
+#: widgets/tab/tab.php:1352 widgets/tab/tab.php:1637 widgets/tab/tab.php:2035
 #: widgets/tablepress/tablepress.php:658 widgets/team/team.php:298
 #: widgets/team/team.php:361 widgets/team/team.php:738
 #: widgets/team/team.php:960 widgets/team/team.php:1241
@@ -2919,8 +2884,8 @@ msgstr ""
 #: widgets/pricing/pricing.php:2273 widgets/pricing/pricing.php:2377
 #: widgets/progressbar/progressbar.php:214
 #: widgets/progressbar/progressbar.php:316 widgets/tab/tab.php:528
-#: widgets/tab/tab.php:627 widgets/tab/tab.php:885 widgets/tab/tab.php:1759
-#: widgets/tab/tab.php:2041 widgets/team/team.php:746 widgets/team/team.php:841
+#: widgets/tab/tab.php:627 widgets/tab/tab.php:886 widgets/tab/tab.php:1760
+#: widgets/tab/tab.php:2042 widgets/team/team.php:746 widgets/team/team.php:841
 #: widgets/team/team.php:1099 widgets/team/team.php:2127
 #: widgets/team/team.php:2192 widgets/testimonial/testimonial.php:724
 #: widgets/testimonial/testimonial.php:1327
@@ -2968,8 +2933,8 @@ msgstr ""
 #: widgets/page-list/page-list.php:374 widgets/piechart/piechart.php:575
 #: widgets/post-tab/post-tab.php:263 widgets/post-tab/post-tab.php:324
 #: widgets/pricing/pricing.php:1071 widgets/pricing/pricing.php:1108
-#: widgets/tab/tab.php:540 widgets/tab/tab.php:639 widgets/tab/tab.php:820
-#: widgets/tab/tab.php:875 widgets/tab/tab.php:2053
+#: widgets/tab/tab.php:540 widgets/tab/tab.php:639 widgets/tab/tab.php:821
+#: widgets/tab/tab.php:876 widgets/tab/tab.php:2054
 #: widgets/testimonial/testimonial.php:1791
 #: widgets/testimonial/testimonial.php:2288
 #: widgets/testimonial/testimonial.php:2338 widgets/video/video.php:1523
@@ -3045,7 +3010,7 @@ msgstr ""
 #: widgets/pricing/pricing.php:2176 widgets/progressbar/progressbar.php:226
 #: widgets/social/social.php:478 widgets/social-share/social-share.php:659
 #: widgets/tab/tab.php:502 widgets/tab/tab.php:580 widgets/tab/tab.php:732
-#: widgets/tab/tab.php:2007 widgets/tablepress/tablepress.php:403
+#: widgets/tab/tab.php:2008 widgets/tablepress/tablepress.php:403
 #: widgets/tablepress/tablepress.php:645 widgets/team/team.php:712
 #: widgets/team/team.php:1087 widgets/team/team.php:1640
 #: widgets/team/team.php:2235 widgets/testimonial/testimonial.php:528
@@ -3111,9 +3076,9 @@ msgstr ""
 #: widgets/post-list/post-list.php:827 widgets/post-list/post-list.php:1003
 #: widgets/post-tab/post-tab.php:366 widgets/pricing/pricing.php:1391
 #: widgets/pricing/pricing.php:1985 widgets/social/social.php:556
-#: widgets/social-share/social-share.php:523 widgets/tab/tab.php:972
-#: widgets/tab/tab.php:1101 widgets/tab/tab.php:1222 widgets/tab/tab.php:1475
-#: widgets/tab/tab.php:1785 widgets/team/team.php:912
+#: widgets/social-share/social-share.php:523 widgets/tab/tab.php:973
+#: widgets/tab/tab.php:1102 widgets/tab/tab.php:1223 widgets/tab/tab.php:1476
+#: widgets/tab/tab.php:1786 widgets/team/team.php:912
 #: widgets/team/team.php:1160 widgets/team/team.php:1714
 #: widgets/team/team.php:2260 widgets/testimonial/testimonial.php:1464
 #: widgets/testimonial/testimonial.php:1905
@@ -3993,9 +3958,9 @@ msgstr ""
 #: widgets/page-list/page-list.php:652 widgets/post-list/post-list.php:717
 #: widgets/post-list/post-list.php:809 widgets/post-tab/post-tab.php:389
 #: widgets/progressbar/progressbar.php:183 widgets/social/social.php:587
-#: widgets/social-share/social-share.php:549 widgets/tab/tab.php:1002
-#: widgets/tab/tab.php:1127 widgets/tab/tab.php:1252 widgets/tab/tab.php:1505
-#: widgets/tab/tab.php:1811 widgets/team/team.php:872
+#: widgets/social-share/social-share.php:549 widgets/tab/tab.php:1003
+#: widgets/tab/tab.php:1128 widgets/tab/tab.php:1253 widgets/tab/tab.php:1506
+#: widgets/tab/tab.php:1812 widgets/team/team.php:872
 #: widgets/team/team.php:1185 widgets/team/team.php:1745
 #: widgets/team/team.php:2281 widgets/testimonial/testimonial.php:941
 #: widgets/testimonial/testimonial.php:1486
@@ -4971,7 +4936,7 @@ msgstr ""
 
 #: widgets/faq/faq.php:131 widgets/piechart/piechart.php:236
 #: widgets/pricing/pricing.php:594 widgets/tab/tab.php:761
-#: widgets/tab/tab.php:835
+#: widgets/tab/tab.php:836
 msgid "Title Color"
 msgstr ""
 
@@ -6114,7 +6079,7 @@ msgid "Shadow line"
 msgstr ""
 
 #: widgets/image-box/image-box.php:159 widgets/image-box/image-box.php:1100
-#: widgets/tab/tab.php:1989 widgets/tablepress/tablepress.php:424
+#: widgets/tab/tab.php:1990 widgets/tablepress/tablepress.php:424
 msgid "Body"
 msgstr ""
 
@@ -7550,59 +7515,59 @@ msgstr ""
 msgid "Nav Items  "
 msgstr ""
 
-#: widgets/tab/tab.php:899
+#: widgets/tab/tab.php:900
 msgid "First and Last Child Border Radius"
 msgstr ""
 
-#: widgets/tab/tab.php:908
+#: widgets/tab/tab.php:909
 msgid "First Child Border Radius"
 msgstr ""
 
-#: widgets/tab/tab.php:920
+#: widgets/tab/tab.php:921
 msgid "First Child Border Width"
 msgstr ""
 
-#: widgets/tab/tab.php:932
+#: widgets/tab/tab.php:933
 msgid "Last Child Border Radius"
 msgstr ""
 
-#: widgets/tab/tab.php:944
+#: widgets/tab/tab.php:945
 msgid "Last Child Border Width"
 msgstr ""
 
-#: widgets/tab/tab.php:960
+#: widgets/tab/tab.php:961
 msgid "Caret  "
 msgstr ""
 
-#: widgets/tab/tab.php:1045 widgets/tab/tab.php:1699
+#: widgets/tab/tab.php:1046 widgets/tab/tab.php:1700
 msgid "Bottom Icon Position"
 msgstr ""
 
-#: widgets/tab/tab.php:1282
+#: widgets/tab/tab.php:1283
 msgid "Bottom Line"
 msgstr ""
 
-#: widgets/tab/tab.php:1338
+#: widgets/tab/tab.php:1339
 msgid "Hear Symbol Background"
 msgstr ""
 
-#: widgets/tab/tab.php:1362 widgets/tab/tab.php:1647 widgets/tab/tab.php:1874
+#: widgets/tab/tab.php:1363 widgets/tab/tab.php:1648 widgets/tab/tab.php:1875
 msgid "Caret Width"
 msgstr ""
 
-#: widgets/tab/tab.php:1388 widgets/tab/tab.php:1673 widgets/tab/tab.php:1900
+#: widgets/tab/tab.php:1389 widgets/tab/tab.php:1674 widgets/tab/tab.php:1901
 msgid "Caret Height"
 msgstr ""
 
-#: widgets/tab/tab.php:1414 widgets/tab/tab.php:1926
+#: widgets/tab/tab.php:1415 widgets/tab/tab.php:1927
 msgid "Bottom Position"
 msgstr ""
 
-#: widgets/tab/tab.php:1444 widgets/tab/tab.php:1729 widgets/tab/tab.php:1956
+#: widgets/tab/tab.php:1445 widgets/tab/tab.php:1730 widgets/tab/tab.php:1957
 msgid "Left Position"
 msgstr ""
 
-#: widgets/tab/tab.php:1996
+#: widgets/tab/tab.php:1997
 msgid "Body Color"
 msgstr ""
 

@@ -49,7 +49,7 @@ abstract class Config_List {
 				continue;
 			}
 
-			if ( \ElementsKit_Lite\Utils::is_feature_disabled( $item ) ) {
+			if ( isset( $item['package'] ) && $item['package'] == 'pro-disabled' ) {
 				continue;
 			}
 

@@ -1,10 +1,9 @@
 <?php
-
 namespace ElementsKit_Lite\Core;
 
 defined('ABSPATH') || exit;
 
-class Editor_Promotion{
+class Editor_Promotion {
 
 	use \ElementsKit_Lite\Traits\Singleton;
 
@@ -18,19 +17,10 @@ class Editor_Promotion{
 	 */
 	private function get_promotion_widgets_data() {
 		$widget_list = \ElementsKit_Lite\Config\Widget_List::instance()->get_list('all');
-		$current_tier = \ElementsKit_Lite\Utils::get_tier();
 		$promotion_data = [];
 
-
 		foreach ($widget_list as $slug => $widget) {
-			$is_pro_disabled = isset($widget['package']) && $widget['package'] === 'pro-disabled';
-			$is_tier_locked  = isset($widget['package']) && $widget['package'] === 'pro'
-				&& isset($widget['tier']) && ! \ElementsKit_Lite\Utils::is_tier($widget['tier']);
-
-			if ($is_pro_disabled || $is_tier_locked) {
-				// Check if widget has tier restrictions
-				$tier_restricted = isset($widget['tier']);
-
+			if (isset($widget['package']) && $widget['package'] === 'pro-disabled') {
 				$promotion_data[] = [
 					'name' => 'ekit-' . $slug,
 					'title' => isset($widget['title']) ? $widget['title'] : ucwords(str_replace('-', ' ', $slug)),
@@ -38,22 +28,12 @@ class Editor_Promotion{
 					'categories' => ['elementskit'],
 					'promotion' => [
 						'title' => sprintf(__('%s Widget', 'elementskit-lite'), isset($widget['title']) ? $widget['title'] : ucwords(str_replace('-', ' ', $slug))),
-						'description' => $is_tier_locked
-							? sprintf(
-								__('The %1$s widget requires a %2$s or higher plan. Upgrade your current %3$s plan to access this widget and other advanced features.', 'elementskit-lite'),
-								isset($widget['title']) ? $widget['title'] : ucwords(str_replace('-', ' ', $slug)),
-								ucfirst($widget['tier']),
-								ucfirst($current_tier)
-							)
-							: sprintf(
-								__('Unlock the %s widget and dozens of powerful ElementsKit Pro features to design faster, smarter, and more flexible websites.', 'elementskit-lite'),
-								isset($widget['title']) ? $widget['title'] : ucwords(str_replace('-', ' ', $slug))
-							),
+						'description' => sprintf(
+							__( 'Unlock the %s widget and dozens of powerful ElementsKit Pro features to design faster, smarter, and more flexible websites.', 'elementskit-lite'),
+							isset($widget['title']) ? $widget['title'] : ucwords(str_replace('-', ' ', $slug))
+						),
 						'upgrade_url' => 'https://wpmet.com/plugin/elementskit/pricing/',
 						'upgrade_text' => __('Upgrade Now', 'elementskit-lite'),
-						'tier_restricted' => $tier_restricted,
-						'required_tier' => isset($widget['tier']) ? $widget['tier'] : null,
-						'current_tier' => $current_tier,
 					],
 				];
 			}

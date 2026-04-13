@@ -61,8 +61,7 @@ $widget_css_class = isset( $_GET['ekit-onboard-steps'] ) && $_GET['ekit-onboard-
 			</h2>
 			<div class="attr-row">
 				<?php foreach ( $widgets as $widget => $widget_config ) : ?>
-				<?php $is_disabled = \ElementsKit_Lite\Utils::is_feature_disabled( $widget_config ); ?>
-				<div class="attr-col-md-6 attr-col-lg-3"  <?php echo ( ! $is_disabled ? '' : 'data-attr-toggle="modal" data-target="#elementskit_go_pro_modal"' ); ?>>
+				<div class="attr-col-md-6 attr-col-lg-3"  <?php echo ( $widget_config['package'] != 'pro-disabled' ? '' : 'data-attr-toggle="modal" data-target="#elementskit_go_pro_modal"' ); ?>>
 					<?php
 						$this->utils->input(
 							array(
@@ -70,8 +69,8 @@ $widget_css_class = isset( $_GET['ekit-onboard-steps'] ) && $_GET['ekit-onboard-
 								'name'    => 'widget_list[]',
 								'label'   => esc_html( $widget_config['title'] ),
 								'value'   => $widget,
-								'attr'    => ( ! $is_disabled ? array() : array( 'disabled' => 'disabled' ) ),
-								'class'   => 'ekit-content-type-' . ( $is_disabled ? 'pro-disabled' : esc_attr( $widget_config['package'] ) ),
+								'attr'    => ( $widget_config['package'] != 'pro-disabled' ? array() : array( 'disabled' => 'disabled' ) ),
+								'class'   => 'ekit-content-type-' . esc_attr( $widget_config['package'] ),
 								'options' => array(
 									'checked' => ( isset( $widgets_active[ $widget ] ) ? true : false ),
 								),

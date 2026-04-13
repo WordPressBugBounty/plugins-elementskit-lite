@@ -76,7 +76,7 @@ class Plugin {
 		$is_pro_active = \ElementsKit_Lite\Utils::ekit_is_plugin_active( 'elementskit/elementskit.php');
 
 		// Initialize editor promotion for pro widgets
-		if( ! \ElementsKit_Lite\Utils::is_tier('agency') ) {
+		if( ! $is_pro_active ) {
 			add_action( 'elementor/editor/init', function() {
 				if ( class_exists( '\ElementsKit_Lite\Core\Editor_Promotion' ) ) {
 					\ElementsKit_Lite\Core\Editor_Promotion::instance()->init();
@@ -193,8 +193,8 @@ class Plugin {
 			->call();
 		}
 
-		// Adding pro label (show for all tiers below agency)
-		if ( ! \ElementsKit_Lite\Utils::is_tier('agency') ) {
+		// Adding pro lebel
+		if ( \ElementsKit_Lite::package_type() == 'free' ) {
 			new Libs\Pro_Label\Init();
 		}
 
