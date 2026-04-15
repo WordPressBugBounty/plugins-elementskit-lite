@@ -2158,7 +2158,7 @@ class ElementsKit_Widget_Video extends Widget_Base {
 				</div>
 			<?php endif; ?>
 				<div class="ekit-hidden-icons" hidden aria-hidden="true">
-					<?php \ElementsKit_Lite\Modules\ElementsKit_Icon_Pack\Init::icon( $settings['ekit_video_popup_close_icon'], ['class' => ['ekit-popup-close-icon']]); ?>
+					<?php Icons_Manager::render_icon( $settings['ekit_video_popup_close_icon'], [ 'class' => 'ekit-popup-close-icon' ] ); ?>
 				</div>
 		</div>
 		<?php } else { ?>
