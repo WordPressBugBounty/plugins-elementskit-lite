@@ -241,6 +241,7 @@ class Plugin_Unsubscribe {
 	private function render_reason_item( array $reason ) {
 		$value       = esc_attr( $reason['value'] );
 		$placeholder = esc_attr( $reason['placeholder'] );
+		$show_textarea = 'temporary_deactivation' === $reason['key'];
 		?>
 		<div class="radio-item">
 			<label class="radio-option">
@@ -254,12 +255,14 @@ class Plugin_Unsubscribe {
 			</label>
 			<input type="hidden" class="reason-key"   value="<?php echo esc_attr( $reason['key'] ); ?>" />
 			<input type="hidden" class="reason-label" value="<?php echo esc_attr( $reason['label'] ); ?>" />
-			<textarea
-				class="radio-feedback"
-				name="feedback_<?php echo $value; ?>"
-				placeholder="<?php echo $placeholder; ?>"
-				rows="2"
-			></textarea>
+			<?php if ( !$show_textarea ) : ?>
+				<textarea
+					class="radio-feedback"
+					name="feedback_<?php echo $value; ?>"
+					placeholder="<?php echo $placeholder; ?>"
+					rows="2"
+				></textarea>
+			<?php endif; ?>
 		</div>
 		<?php
 	}
@@ -415,21 +418,11 @@ class Plugin_Unsubscribe {
 	 * @return string One of `'pro_valid'`, `'pro'`, or `'free'`.
 	 */
 	private function get_user_type() {
-		if ( ! class_exists( 'ElementsKit' ) ) {
+		if ( 'pro' !== \ElementsKit_Lite::package_type() ) {
 			return 'free';
 		}
 
-		$license_status = 'invalid';
-
-		if ( class_exists( '\ElementsKit\Libs\Framework\Classes\License' ) ) {
-			$license = License::instance();
-
-			if ( method_exists( $license, 'status' ) ) {
-				$license_status = $license->status();
-			}
-		}
-
-		return 'valid' === $license_status ? 'pro_valid' : 'pro';
+		return 'valid' === \ElementsKit_Lite::license_status() ? 'pro_valid' : 'pro';
 	}
 
 	/**
@@ -484,12 +477,6 @@ class Plugin_Unsubscribe {
 				'placeholder' => __( 'What specific issue did you face?', 'elementskit-lite' ),
 			),
 			array(
-				'value'       => __( "It's a temporary deactivation", 'elementskit-lite' ),
-				'key'         => 'temporary_deactivation',
-				'label'       => "It's a temporary deactivation",
-				'placeholder' => __( 'When will you reactivate it?', 'elementskit-lite' ),
-			),
-			array(
 				'value'       => __( "It's missing a specific feature", 'elementskit-lite' ),
 				'key'         => 'missing_feature',
 				'label'       => "It's missing a specific feature",
@@ -500,6 +487,12 @@ class Plugin_Unsubscribe {
 				'key'         => 'performance_issue',
 				'label'       => 'Slowing down my site',
 				'placeholder' => __( 'Please share details about the performance issues you experienced.', 'elementskit-lite' ),
+			),
+			array(
+				'value'       => __( "It's a temporary deactivation", 'elementskit-lite' ),
+				'key'         => 'temporary_deactivation',
+				'label'       => "It's a temporary deactivation",
+				'placeholder' => __( 'When will you reactivate it?', 'elementskit-lite' ),
 			),
 			array(
 				'value'       => __( 'Other', 'elementskit-lite' ),

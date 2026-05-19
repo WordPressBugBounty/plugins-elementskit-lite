@@ -2,9 +2,9 @@
 # This file is distributed under the GPLv3 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: ElementsKit Lite 3.9.5\n"
+"Project-Id-Version: ElementsKit Lite 3.9.6\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/elementskit-lite\n"
-"POT-Creation-Date: 2026-05-19 08:49:28+00:00\n"
+"POT-Creation-Date: 2026-05-19 11:55:02+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -90,75 +90,75 @@ msgstr ""
 msgid "Close"
 msgstr ""
 
-#: core/plugin-unsubscribe.php:278
+#: core/plugin-unsubscribe.php:281
 msgid "Skip & Deactivate"
 msgstr ""
 
-#: core/plugin-unsubscribe.php:281
+#: core/plugin-unsubscribe.php:284
 msgid "Submit & Deactivate"
 msgstr ""
 
-#: core/plugin-unsubscribe.php:304
+#: core/plugin-unsubscribe.php:307
 msgid "Security check failed"
 msgstr ""
 
-#: core/plugin-unsubscribe.php:310
+#: core/plugin-unsubscribe.php:313
 msgid "Insufficient permissions"
 msgstr ""
 
-#: core/plugin-unsubscribe.php:469
+#: core/plugin-unsubscribe.php:462
 msgid "I no longer need the plugin"
 msgstr ""
 
-#: core/plugin-unsubscribe.php:472
+#: core/plugin-unsubscribe.php:465
 msgid "Tell us more..."
 msgstr ""
 
-#: core/plugin-unsubscribe.php:475
+#: core/plugin-unsubscribe.php:468
 msgid "I found a better plugin"
 msgstr ""
 
-#: core/plugin-unsubscribe.php:478
+#: core/plugin-unsubscribe.php:471
 msgid "Which plugin are you using instead?"
 msgstr ""
 
-#: core/plugin-unsubscribe.php:481
+#: core/plugin-unsubscribe.php:474
 msgid "I couldn't get the plugin to work"
 msgstr ""
 
-#: core/plugin-unsubscribe.php:484
+#: core/plugin-unsubscribe.php:477
 msgid "What specific issue did you face?"
 msgstr ""
 
-#: core/plugin-unsubscribe.php:487
-msgid "It's a temporary deactivation"
-msgstr ""
-
-#: core/plugin-unsubscribe.php:490
-msgid "When will you reactivate it?"
-msgstr ""
-
-#: core/plugin-unsubscribe.php:493
+#: core/plugin-unsubscribe.php:480
 msgid "It's missing a specific feature"
 msgstr ""
 
-#: core/plugin-unsubscribe.php:496
+#: core/plugin-unsubscribe.php:483
 msgid "What feature do you need?"
 msgstr ""
 
-#: core/plugin-unsubscribe.php:499
+#: core/plugin-unsubscribe.php:486
 msgid "The plugin affects site performance"
 msgstr ""
 
-#: core/plugin-unsubscribe.php:502
+#: core/plugin-unsubscribe.php:489
 msgid "Please share details about the performance issues you experienced."
 msgstr ""
 
-#: core/plugin-unsubscribe.php:505
+#: core/plugin-unsubscribe.php:492
+msgid "It's a temporary deactivation"
+msgstr ""
+
+#: core/plugin-unsubscribe.php:495
+msgid "When will you reactivate it?"
+msgstr ""
+
+#: core/plugin-unsubscribe.php:498
 msgid "Other"
 msgstr ""
 
-#: core/plugin-unsubscribe.php:508
+#: core/plugin-unsubscribe.php:501
 msgid "Please tell us why..."
 msgstr ""
 
