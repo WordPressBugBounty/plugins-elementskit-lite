@@ -12,8 +12,11 @@ class ElementsKit_Widget_Nav_Menu extends Widget_Base {
 
     public function __construct( $data = [], $args = null ) {
         parent::__construct( $data, $args );
-        $this->add_script_depends('ekit-nav-menu');
     }
+
+	public function get_script_depends() {
+		return ['ekit-nav-menu'];
+	}
 
     public function get_name() {
         return Handler::get_name();

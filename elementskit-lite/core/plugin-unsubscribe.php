@@ -272,6 +272,14 @@ class Plugin_Unsubscribe {
 					placeholder="<?php echo $placeholder; ?>"
 					rows="2"
 				></textarea>
+				<?php if ( 'plugin_bug' === $reason['key'] ) : ?>
+				<div class="ekit-help-links">
+					<span class="ekit-help-links-title">💡 <?php esc_html_e( 'Need help before deactivating?', 'elementskit-lite' ); ?></span>
+					<a href="https://wpmet.com/support-ticket-form/" target="_blank" rel="noopener noreferrer">
+						<?php esc_html_e( 'Contact Support Team', 'elementskit-lite' ); ?>
+					</a>
+				</div>
+				<?php endif; ?>
 			<?php endif; ?>
 		</div>
 		<?php

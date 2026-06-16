@@ -12,12 +12,11 @@ class ElementsKit_Widget_Image_Comparison extends Widget_Base {
     public $base;
     
     public function __construct( $data = [], $args = null ) {
+		parent::__construct( $data, $args );
+	}
 
-        parent::__construct( $data, $args );
-
-		$this->add_script_depends('event.move');
-		$this->add_script_depends('twentytwenty');
-		$this->add_script_depends('imagesloaded');
+	public function get_script_depends() {
+		return ['ekit-image-comparison', 'event.move', 'twentytwenty', 'imagesloaded'];
 	}
 
     public function get_name() {

@@ -17,7 +17,7 @@ class ElementsKit_Widget_Countdown_Timer extends Widget_Base {
 	}
 
 	public function get_script_depends() {
-		return ['final-countdown'];
+		return ['ekit-countdown-timer', 'final-countdown'];
 	}
 
     public function get_name() {
