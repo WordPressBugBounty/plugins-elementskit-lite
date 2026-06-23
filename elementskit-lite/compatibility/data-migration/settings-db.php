@@ -88,10 +88,10 @@ class Settings_Db
 
 	public function ekit_mail_chimp_upgrader($upgrader_object, array $options)
 	{
-		// // Stop if migration already ran
-		// if (get_transient('ekit_lite_mailchimp_migrate')) {
-		// 	return;
-		// }
+		// Stop if migration already ran
+		if (get_transient('ekit_lite_mailchimp_migrate')) {
+			return;
+		}
 
 		// Plugins to check for updates
 		$plugins_to_check = [

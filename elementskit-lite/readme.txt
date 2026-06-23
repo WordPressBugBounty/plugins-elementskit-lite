@@ -4,7 +4,7 @@ Tags: Elementor addons, mega menu builder,  header footer builder, elementor add
 Requires at least: 6.0
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 3.9.8
+Stable tag: 3.9.9
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -35,17 +35,17 @@ https://www.youtube.com/watch?v=VhBl3dHT5SY
 
 ## Why Use ElementsKit Elementor Addon
 
-🔥 All time downloads of ElementsKit : **46 million+**
+🔥 All time downloads of ElementsKit : **50 million+**
 
 ⭐ **100+** Free and Premium Elementor Widgets
 
 ⭐ **20+ Exclusive Modules** for advanced design solution
 
-⭐ **45+ Pre-designed** Header & Footer Elementor Templates
+⭐ **100+ Pre-designed** Header & Footer Elementor Templates
 
 ⭐ **98+ Ready Pages** to start Elementor website in no time
 
-⭐ Versatile Elementor template library of **1000+ Pre-made Sections**
+⭐ Versatile Elementor template library of **1250+ Pre-made Sections**
 
 ⭐ No-code Elementor **Custom Widget** Builder
 
@@ -68,7 +68,7 @@ https://www.youtube.com/watch?v=VhBl3dHT5SY
 
 ### Extensive ElementsKit Templates for Elementor
 
-Skip the blank canvas and explore niche-specific [50+ Elementor templates](https://wpmet.com/plugin/elementskit/templates/?utm_source=org&utm_medium=readme) with royalty-free images. Just import any layout in 1-click, customize with drag-and-drop, and publish in minutes. Get more design control over specific parts of your website with over 1,000 designer-built block or section templates, Elementor header-footer templates, and Elementor mega menu templates.
+ElementsKit is a popular Elementor addon among millions of users that eliminates the need to design from scratch. It ships with over **1250+** pre-made section blocks and **50+** [ready-made Elementor templates](https://wpmet.com/plugin/elementskit/templates/) for designing a full website, including Elementor header-footer templates & Elementor mega menu templates. Whatever niche or industry, you’re working with, ElementsKit page builder addon layout library includes unique Elementor templates designed with royalty-free images.
 
 ### Build Fast & Stylish Elementor Sites:
 
@@ -76,51 +76,7 @@ Skip the blank canvas and explore niche-specific [50+ Elementor templates](https
 
 **Completely Customizable:** Widgets & modules come with powerful styling controls to customize every pixel of Elementor sites.
 
-**Dynamic Website Builder Functionality:** Set dynamic conditions to set content & navigation by role, device, time, OS, etc.
-
-
-### ELEMENTOR ADDONS FOR HEADERS, FOOTERS, MENUS, POSTS & FORMS 
-
-**🟢** [**ElementsKit Header and Footer Builder**](https://wpmet.com/plugin/elementskit/header-footer-builder/?utm_source=org&utm_medium=readme)
-Build and customize Elementor website header footer with a drag-and-drop interface. Enjoy features like **conditional display, sticky menus, off-canvas menus, WooCommerce carts,** etc, with Elementor header footer builder. [**ElementsKit**](https://wpmet.com/doc/header-footer-modules/?utm_source=org&utm_medium=readme) has versatile pre-designed templates for Elementor header footer.
-
-https://www.youtube.com/watch?v=lprqRBvKMQM
-
-**🟢** [ **Elementor Megamenu builder** ](https://products.wpmet.com/megamenu/?utm_source=org&utm_medium=readme)
-Design multi-level WordPress mega menus with Elementor widgets, content, and visuals using [ **ElementsKit’s no-code Elementor mega menu builder**](https://wpmet.com/doc/mega-menu-module/?utm_source=org&utm_medium=readme). Create **horizontal or vertical menus** effortlessly, ideal for any niche, including free e-commerce mega menu.
-
-### ElementsKit Elementor Addon Featuring Free Header Widgets
-Experience a no-cost WordPress site header navigation functions like dropdown menu, hamburger menu, offcanvas menu. Also, customize header info items like logos, text, address, social icons and display a functional search bar.
-
-**<strong>Free Elementor Widgets for Header Styling</strong><br/>🔶 [ElementsKit Nav Menu](https://wpmet.com/plugin/elementskit/nav-menu/?utm_source=org&utm_medium=readme) 🔶 [Header Offcanvas](https://wpmet.com/plugin/elementskit/header-offcanvas/?utm_source=org&utm_medium=readme) 🔶 [Header Search](https://wpmet.com/plugin/elementskit/header-search/?utm_source=org&utm_medium=readme) 🔶[Header Info](https://wpmet.com/plugin/elementskit/header-info/?utm_source=org&utm_medium=readme) 🔶**
-
-
-### Blog Post Addon for Elementor
-Display and organize your blog posts in flexible blog layout options like grid, list, tab, etc. ElementsKit covers various blog post widgets that make it easy for visitors to navigate to your popular, related, recent blog posts, or a based on aspecific category through an intuitive blog post structure.
-
-🔶 [**Blog Posts**](https://wpmet.com/plugin/elementskit/blog/?utm_source=org&utm_medium=readme) 🔶 [**Post Tab**](https://wpmet.com/plugin/elementskit/post-tab/?utm_source=org&utm_medium=readme) 🔶 [**Post List**](https://wpmet.com/plugin/elementskit/post-list/?utm_source=org&utm_medium=readme') 🔶 [**Post Grid**](https://wpmet.com/plugin/elementskit/post-grid/?utm_source=org&utm_medium=readme) 🔶 [**Category List**](https://wpmet.com/plugin/elementskit/category-list/?utm_source=org&utm_medium=readme)🔶
-
-
-### Free Elementor Addon for Third-Party Form Styling
-
-Name any popular form builder plugin, and there's a dedicated  **form styler widget** in ElementsKit Elementor addon. A flexible Elementor-like interface allows you to easily customize a variety of forms, including contact forms, suggestion forms, newsletters.
-
-Whether using templates or building from scratch, ElementsKit provides extensive customization options to match your form design needs effortlessly.
-
-**<strong>Free Elementor Widgets for Form Styling</strong><br/>🔶 [Caldera Forms](https://wpmet.com/plugin/elementskit/caldera-form/?utm_source=org&utm_medium=readme) 🔶 [Contact Form 7](https://wpmet.com/plugin/elementskit/contact/?utm_source=org&utm_medium=readme) 🔶 [Ninja Forms](https://wpmet.com/plugin/elementskit/ninja-forms/?utm_source=org&utm_medium=readme) 🔶[WP Forms](https://wpmet.com/plugin/elementskit/wp-forms/?utm_source=org&utm_medium=readme)  🔶  [weForms](https://wpmet.com/plugin/elementskit/we-forms/?utm_source=org&utm_medium=readme)  🔶  [Fluent Forms](https://wpmet.com/plugin/elementskit/fluent-forms/?utm_source=org&utm_medium=readme) 🔶 [MailChimp](https://wpmet.com/plugin/elementskit/mail-chimp/?utm_source=org&utm_medium=readme) 🔶**
-
-
-### Highly Functional Free Modules for Elementor Builder
-This advanced Elementor addon offers some powerful modules in the free version.
-
-**🟢** [**Elementor Widget Builder**](https://wpmet.com/plugin/elementskit/widget-builder/?utm_source=org&utm_medium=readme)
-ElementsKit gives web designers ultimate creative freedom to build custom widgets without coding. Just drag and drop controls to **create fully responsive Elementor widgets**.
-
-**🟢** [**Onepage Scroll**](https://wpmet.com/plugin/elementskit/onepage-scroll/?utm_source=org&utm_medium=readme)
-ElementsKit lets you create sleek, scrollable onepage scroll websites with interactive navigation. This [ **Elementor onepage scroll feature**](https://wpmet.com/doc/one-page-scroll/?utm_source=org&utm_medium=readme) also supports pre-designed onepage scroll layouts.
-
-**🟢[Custom Icon Pack for Elementor](https://wpmet.com/plugin/elementskit/icon-pack/?utm_source=org&utm_medium=readme)**
-ElementsKit ships with a collection of meticulously designed, trendy custom icons **(3000+)** for WordPress.
+**Dynamic Website Builder Functionality:** Set dynamic conditions to show content by role, device, time, headers.
 
 
 ### 50+ FREE ELEMENTOR WIDGETS
@@ -189,9 +145,45 @@ If you’re looking for a free Elementor addon, ElementsKit offers a complete pa
 
 ✅[ **Back to Top** ](https://wpmet.com/plugin/elementskit/back-to-top/?utm_source=org&utm_medium=readme)- Style the back-to-top button easily.
 
+### ElementsKit Elementor Addon Featuring Free Header Widgets
+Experience a no-cost WordPress site header navigation functions like dropdown menu, hamburger menu, offcanvas menu. Also, customize header info items like logos, text, address, social icons and display a functional search bar.
 
-### PREMIUM ELEMENTOR ADDON: PRO FEATURES 
+**<strong>Free Elementor Widgets for Header Styling</strong><br/>🔶 [ElementsKit Nav Menu](https://wpmet.com/plugin/elementskit/nav-menu/?utm_source=org&utm_medium=readme) 🔶 [Header Offcanvas](https://wpmet.com/plugin/elementskit/header-offcanvas/?utm_source=org&utm_medium=readme) 🔶 [Header Search](https://wpmet.com/plugin/elementskit/header-search/?utm_source=org&utm_medium=readme) 🔶[Header Info](https://wpmet.com/plugin/elementskit/header-info/?utm_source=org&utm_medium=readme) 🔶**
 
+### Blog Post Addon for Elementor
+Display and organize your blog posts in flexible blog layout options like grid, list, tab, etc. ElementsKit covers various blog post widgets that make it easy for visitors to navigate to your popular, related, recent blog posts, or a based on aspecific category through an intuitive blog post structure.
+
+🔶 [**Blog Posts**](https://wpmet.com/plugin/elementskit/blog/?utm_source=org&utm_medium=readme) 🔶 [**Post Tab**](https://wpmet.com/plugin/elementskit/post-tab/?utm_source=org&utm_medium=readme) 🔶 [**Post List**](https://wpmet.com/plugin/elementskit/post-list/?utm_source=org&utm_medium=readme') 🔶 [**Post Grid**](https://wpmet.com/plugin/elementskit/post-grid/?utm_source=org&utm_medium=readme) 🔶 [**Category List**](https://wpmet.com/plugin/elementskit/category-list/?utm_source=org&utm_medium=readme)🔶
+
+### Free Elementor Addon for Third-Party Form Styling
+
+Name any popular form builder plugin, and there's a dedicated  **form styler widget** in ElementsKit Elementor addon. A flexible Elementor-like interface allows you to easily customize a variety of forms, including contact forms, suggestion forms, newsletters.
+
+Whether using templates or building from scratch, ElementsKit provides extensive customization options to match your form design needs effortlessly.
+
+**<strong>Free Elementor Widgets for Form Styling</strong><br/>🔶 [Caldera Forms](https://wpmet.com/plugin/elementskit/caldera-form/?utm_source=org&utm_medium=readme) 🔶 [Contact Form 7](https://wpmet.com/plugin/elementskit/contact/?utm_source=org&utm_medium=readme) 🔶 [Ninja Forms](https://wpmet.com/plugin/elementskit/ninja-forms/?utm_source=org&utm_medium=readme) 🔶[WP Forms](https://wpmet.com/plugin/elementskit/wp-forms/?utm_source=org&utm_medium=readme)  🔶  [weForms](https://wpmet.com/plugin/elementskit/we-forms/?utm_source=org&utm_medium=readme)  🔶  [Fluent Forms](https://wpmet.com/plugin/elementskit/fluent-forms/?utm_source=org&utm_medium=readme) 🔶 [MailChimp](https://wpmet.com/plugin/elementskit/mail-chimp/?utm_source=org&utm_medium=readme) 🔶**
+
+### Highly Functional Free Modules for Elementor Builder
+This advanced Elementor addon offers some powerful modules in the free version.
+
+**🟢** [**ElementsKit Header and Footer Builder**](https://wpmet.com/plugin/elementskit/header-footer-builder/?utm_source=org&utm_medium=readme)
+Build and customize Elementor website header footer with a drag-and-drop interface. Enjoy features like **conditional display, sticky menus, off-canvas menus, WooCommerce carts,** etc, with Elementor header footer builder. [**ElementsKit**](https://wpmet.com/doc/header-footer-modules/?utm_source=org&utm_medium=readme) has versatile pre-designed templates for Elementor header footer.
+
+https://www.youtube.com/watch?v=lprqRBvKMQM
+
+**🟢** [ **Elementor Megamenu builder** ](https://products.wpmet.com/megamenu/?utm_source=org&utm_medium=readme)
+Design multi-level WordPress mega menus with Elementor widgets, content, and visuals using [ **ElementsKit’s no-code Elementor mega menu builder**](https://wpmet.com/doc/mega-menu-module/?utm_source=org&utm_medium=readme). Create **horizontal or vertical menus** effortlessly, ideal for any niche, including free e-commerce mega menu.
+
+**🟢** [**Elementor Widget Builder**](https://wpmet.com/plugin/elementskit/widget-builder/?utm_source=org&utm_medium=readme)
+ElementsKit gives web designers ultimate creative freedom to build custom widgets without coding. Just drag and drop controls to **create fully responsive Elementor widgets**.
+
+**🟢** [**Onepage Scroll**](https://wpmet.com/plugin/elementskit/onepage-scroll/?utm_source=org&utm_medium=readme)
+ElementsKit lets you create sleek, scrollable onepage scroll websites with interactive navigation. This [ **Elementor onepage scroll feature**](https://wpmet.com/doc/one-page-scroll/?utm_source=org&utm_medium=readme) also supports pre-designed onepage scroll layouts.
+
+**🟢[Custom Icon Pack for Elementor](https://wpmet.com/plugin/elementskit/icon-pack/?utm_source=org&utm_medium=readme)**
+ElementsKit ships with a collection of meticulously designed, trendy custom icons **(3000+)** for WordPress.
+
+### Exclusive PRO Elementor Addons Widgets
 Let's look at advanced Elementor widgets in ElementsKit Pro version:
 
 ✅ [ **Custom Login Forms** ](https://wpmet.com/plugin/elementskit/elementor-login-form/?utm_source=org&utm_medium=readme) – Stylish sign-in forms with multi-authentication types: social, browser.
@@ -268,11 +260,7 @@ Let's look at advanced Elementor widgets in ElementsKit Pro version:
 
 ✅ [**Footer Copyright**](https://wpmet.com/plugin/elementskit/elementor-copyright/?utm_source=org&utm_medium=readme) – Add or change copyright text anywhere in Elementor.
 
-✅ [**[Stacked Cards](https://wpmet.com/plugin/elementskit/stacked-cards/?utm_source=org&utm_medium=readme)**] Display multiple cards overlapping and scrolling on top of each other when a user scrolls.
-
-
-### WOOCOMMERCE ELEMENTOR ADDON WIDGETS
-
+## WooCommerce Elementor Addon
 Display and design e-commerce products in a list and intuitive sliders, along with their categories and mini cart option, anywhere you want.
 **<strong></strong><br />🔶  [WooCommerce Product List](%28https://wpmet.com/plugin/elementskit/woo-product-list/?utm_source=org&utm_medium=readme%29) 🔶[WooCommerce Product Carousel](%28https://wpmet.com/plugin/elementskit/woo-product-carousel/?utm_source=org&utm_medium=readme%29) 🔶[WooCommerce Category List](%28https://wpmet.com/plugin/elementskit/woo-category-list/?utm_source=org&utm_medium=readme%29) 🔶[WooCommerce Mini Cart](%28https://wpmet.com/plugin/elementskit/woo-mini-cart/?utm_source=org&utm_medium=readme%29)**
 
@@ -365,6 +353,15 @@ ElementsKit is brought to you by Wpmet, a name **trusted by 10,00,000 satisfied 
 Visit  [wpmet](https://wpmet.com/?utm_source=org&utm_medium=readme) for essential WordPress [Tutorials, Tips & Tricks](https://wpmet.com/blog)!
 
 == Changelog ==
+= ElementsKit Elementor Addons Version: 3.9.9 (2026-06-23) =
+* Added: Expire Actions styling options for Countdown Timer finished-state content.
+* Fixed: Menu click issue on mobile devices in the Offcanvas widget.
+* Fixed: Compatibility issue with Ninja Forms integration.
+* Fixed: Translation issue in the user onboarding process.
+* Fixed: Translation issue in the Image Comparison widget.
+* Fixed: Mailchimp settings migration issue during updates process.
+* Fixed: Deactivation feedback modal user type detection issue.
+
 = ElementsKit Elementor Addons Version: 3.9.8 (2026-06-15) =
 * Added: Advanced Table Builder integration to the onboarding process.
 * Added: Contextual Help & Support links to the deactivation feedback modal.
