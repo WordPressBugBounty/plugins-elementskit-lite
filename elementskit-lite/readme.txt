@@ -4,7 +4,7 @@ Tags: Elementor addons, mega menu builder,  header footer builder, elementor add
 Requires at least: 6.0
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 3.10.01
+Stable tag: 3.10.02
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -353,12 +353,15 @@ ElementsKit is brought to you by Wpmet, a name **trusted by 10,00,000 satisfied 
 Visit  [wpmet](https://wpmet.com/?utm_source=org&utm_medium=readme) for essential WordPress [Tutorials, Tips & Tricks](https://wpmet.com/blog)!
 
 == Changelog ==
+= ElementsKit Elementor Addons Version: 3.10.02 (2026-07-09) =
+* Improved: Onboarding process
+
 = ElementsKit Elementor Addons Version: 3.10.01 (2026-07-06) =
 * Fixed: Updated icons for Login and Registration widgets
 * Improved: Change heading title control from TEXT to TEXTAREA
 * Improved: Improved multisite security with enhanced capability checks and input validation.
-* Security: Fixed a multisite security issue in the Custom Widget Builder.
-* Security: Fixed a multisite security issue affecting Mega Menu settings.
+* Security: Fixed a multisite security issue in the Custom Widget Builder. Thanks to Revanth Hari Narayana Matte
+* Security: Fixed a multisite security issue affecting Mega Menu settings. Thanks to Revanth Hari Narayana Matte
 
 = ElementsKit Elementor Addons Version: 3.9.10 (2026-07-01) =
 * Fixed: Wpml Compability with Heading and Testinomial widget
