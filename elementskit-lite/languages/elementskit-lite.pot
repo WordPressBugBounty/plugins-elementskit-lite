@@ -2,9 +2,9 @@
 # This file is distributed under the GPLv3 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: ElementsKit Lite 4.0.0\n"
+"Project-Id-Version: ElementsKit Lite 4.0.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/elementskit-lite\n"
-"POT-Creation-Date: 2026-08-11 08:39:14+00:00\n"
+"POT-Creation-Date: 2026-08-12 11:57:01+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -85,7 +85,8 @@ msgstr ""
 msgid "Quick Feedback"
 msgstr ""
 
-#: core/plugin-unsubscribe.php:226 modules/controls/widget-area-modal.php:17
+#: core/plugin-unsubscribe.php:226 libs/pro-label/views/modal.php:6
+#: modules/controls/widget-area-modal.php:17
 #: modules/controls/widget-area-modal.php:18
 #: widgets/business-hours/business-hours.php:153
 #: widgets/header-offcanvas/header-offcanvas.php:236
@@ -422,7 +423,8 @@ msgid "Limitless Options"
 msgstr ""
 
 #: libs/forms/pages/template.php:391
-#: libs/framework/views/layout-settings.php:39 plugin.php:193
+#: libs/framework/views/layout-settings.php:39 libs/pro-label/views/modal.php:9
+#: plugin.php:193
 msgid "Go Premium"
 msgstr ""
 
@@ -438,39 +440,39 @@ msgid ""
 "support means a lot to our team!"
 msgstr ""
 
-#: libs/framework/classes/ajax.php:121
+#: libs/framework/classes/ajax.php:123
 msgid "Setup Configurations"
 msgstr ""
 
-#: libs/framework/classes/ajax.php:122
+#: libs/framework/classes/ajax.php:124
 msgid "Page Builder Elements Activated"
 msgstr ""
 
-#: libs/framework/classes/ajax.php:123
+#: libs/framework/classes/ajax.php:125
 msgid "AI Content & SEO Tool Activated"
 msgstr ""
 
-#: libs/framework/classes/ajax.php:124
+#: libs/framework/classes/ajax.php:126
 msgid "WooCommerce Builder Activated"
 msgstr ""
 
-#: libs/framework/classes/ajax.php:125
+#: libs/framework/classes/ajax.php:127
 msgid "Form Builder Activated"
 msgstr ""
 
-#: libs/framework/classes/ajax.php:126
+#: libs/framework/classes/ajax.php:128
 msgid "Email Customizer Activated"
 msgstr ""
 
-#: libs/framework/classes/ajax.php:130
+#: libs/framework/classes/ajax.php:132
 msgid "Page Builder Blocks Activated"
 msgstr ""
 
-#: libs/framework/classes/ajax.php:131
+#: libs/framework/classes/ajax.php:133
 msgid "Popup Builder Activated"
 msgstr ""
 
-#: libs/framework/classes/ajax.php:140
+#: libs/framework/classes/ajax.php:142
 msgid "Plugin Activated"
 msgstr ""
 
@@ -1284,18 +1286,18 @@ msgid ""
 "issues with Elementskit icons, simply disable this feature."
 msgstr ""
 
-#: libs/framework/views/settings-sections/widgets.php:45
+#: libs/framework/views/settings-sections/widgets.php:46
 msgid ""
 "You can disable the elements you are not using on your site. That will "
 "disable all associated assets of those widgets to improve your site loading "
 "speed."
 msgstr ""
 
-#: libs/framework/views/settings-sections/widgets.php:52
+#: libs/framework/views/settings-sections/widgets.php:53
 msgid "Social Media Feeds"
 msgstr ""
 
-#: libs/framework/views/settings-sections/widgets.php:56
+#: libs/framework/views/settings-sections/widgets.php:57
 msgid "%1$s"
 msgstr ""
 
@@ -1354,7 +1356,19 @@ msgstr ""
 msgid "Premium Version"
 msgstr ""
 
-#: libs/stories/stories.php:252
+#: libs/pro-label/views/modal.php:11
+msgid "Purchase our"
+msgstr ""
+
+#: libs/pro-label/views/modal.php:12
+msgid "pro version"
+msgstr ""
+
+#: libs/pro-label/views/modal.php:13
+msgid "to unlock these premium features!"
+msgstr ""
+
+#: libs/stories/stories.php:253
 msgid "Wpmet Stories"
 msgstr ""
 

@@ -4,7 +4,7 @@ Tags: Elementor addons, mega menu builder,  header footer builder, elementor add
 Requires at least: 6.0
 Tested up to: 7.0.3
 Requires PHP: 7.4
-Stable tag: 4.0.0
+Stable tag: 4.0.1
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -20,7 +20,7 @@ This popular Elementor addons expands your capabilities with an easy drag-and-dr
 
 Besides exclusive design elements & templates, ElementsKit offers copy-paste across domains, conditional content visibility, and advanced widgets for content, forms, posts, charts, parallax and WooCommerce for building Elementor sites.
 
-Now, **[ElementsKit 4.0]**(https://wpmet.com/elementskit-4-0/) loads up to 80% faster, meets WCAG 2.1 AA accessibility standards, and works with Elementor's Angie AI.
+Now, **[ElementsKit 4.0](https://wpmet.com/elementskit-4-0/?utm_source=org&utm_medium=readme)** loads up to 80% faster, meets WCAG 2.1 AA accessibility standards, and works with Elementor's Angie AI.
 
 
 🏆 Great **Elementor Addon**! Check [**ElementsKit demos**](https://wpmet.com/plugin/elementskit/elements/?utm_source=org&utm_medium=readme) for new website-building possibilities.
@@ -357,6 +357,11 @@ ElementsKit is brought to you by Wpmet, a name **trusted by 10,00,000 satisfied 
 Visit  [wpmet](https://wpmet.com/?utm_source=org&utm_medium=readme) for essential WordPress [Tutorials, Tips & Tricks](https://wpmet.com/blog)!
 
 == Changelog ==
+= ElementsKit Elementor Addons Version: 4.0.1 (2026-08-12) =
+* Security: Sanitized input handling and improved output escaping.
+* Improved: Localized the Go Premium modal strings.
+* Improved: Updated the ElementsKit 4.0 link in the readme.
+
 = ElementsKit Elementor Addons Version: 4.0.0 (2026-08-10) =
 * Added: Angie AI compatibility through WordPress abilities and REST API integration.
 * Added: Accessibility improvements for All widgets.
