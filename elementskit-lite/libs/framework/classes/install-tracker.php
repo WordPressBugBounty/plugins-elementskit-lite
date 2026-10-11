@@ -39,7 +39,7 @@ class Install_Tracker {
 	 * Onboarding status options used by known Wpmet plugins.
 	 *
 	 * @since 3.9.5
-	 * @var array<string, array{option: string, value: mixed, crm_slug?: string}>
+	 * @var array<string, array{option?: string, value?: mixed, crm_slug?: string}>
 	 */
 	const ONBOARD_STATUS_MAP = array(
 		'elementskit-lite/elementskit-lite.php'           => array( 'option' => 'elements_kit_onboard_status', 'value' => 'onboarded', 'crm_slug' => 'elementskit-lite' ),
@@ -49,6 +49,8 @@ class Install_Tracker {
 		'gutenkit-blocks-addon/gutenkit-blocks-addon.php' => array( 'option' => 'gutenkit_onboard_status', 'value' => 'onboarded', 'crm_slug' => 'gutenkit-blocks-addon' ),
 		'getgenie/getgenie.php'                           => array( 'option' => 'getgenie_onboard_status', 'value' => 'onboarded', 'crm_slug' => 'getgenie' ),
 		'popup-builder-block/popup-builder-block.php'     => array( 'option' => 'popupkit_onboard_status', 'value' => 'onboarded', 'crm_slug' => 'popupkit' ),
+		'rox-dynamic-cpt-fields-engine/rox-dynamic-cpt-fields-engine.php' => array( 'crm_slug' => 'rox-dynamic-cpt-fields-engine' ),
+		'rox-appointment-booking/rox-appointment-booking.php' => array( 'option' => 'rox_appointment_booking_onboarded', 'value' => 1, 'crm_slug' => 'rox-appointment-booking' ),
 	);
 
 	/**
@@ -84,7 +86,7 @@ class Install_Tracker {
 
 		$map = self::get_onboard_status_map();
 
-		if ( isset( $map[ $plugin_file ] ) && ! get_option( $map[ $plugin_file ]['option'] ) ) {
+		if ( isset( $map[ $plugin_file ]['option'] ) && ! get_option( $map[ $plugin_file ]['option'] ) ) {
 			update_option( $map[ $plugin_file ]['option'], $map[ $plugin_file ]['value'], false );
 		}
 	}

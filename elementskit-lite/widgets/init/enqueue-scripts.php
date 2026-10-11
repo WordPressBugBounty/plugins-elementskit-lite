@@ -1,6 +1,7 @@
 <?php
 namespace ElementsKit_Lite\Widgets\Init;
 use ElementsKit_Lite\Libs\Framework\Attr;
+use ElementsKit_Lite\Modules\Header_Footer\Activator;
 
 defined( 'ABSPATH' ) || exit;
 
@@ -196,6 +197,13 @@ class Enqueue_Scripts {
 	 * @return void
 	 */
 	public function enqueue_frontend_scripts() {
+		// ekit-core depends on elementor-frontend, whose config Elementor only prints on
+		// pages it renders. Enqueueing it anywhere else throws "elementorFrontendConfig
+		// is not defined".
+		if ( ! $this->has_header_footer_template() ) {
+			return;
+		}
+
 		$header_script_handles = [
 			'ekit-core',
 			'ekit-nav-menu',
@@ -226,17 +234,19 @@ class Enqueue_Scripts {
 	 * @return void
 	 */
 	public function enqueue_frontend_css() {
-		$header_style_handles = [
-			'ekit-nav-menu',
-			'ekit-header-search',
-			'ekit-header-offcanvas',
-			'ekit-header-info',
-			'countdown-timer',
-		];
+		if ( $this->has_header_footer_template() ) {
+			$header_style_handles = [
+				'ekit-nav-menu',
+				'ekit-header-search',
+				'ekit-header-offcanvas',
+				'ekit-header-info',
+				'countdown-timer',
+			];
 
-		foreach ( $header_style_handles as $style_handle ) {
-			if ( wp_style_is( $style_handle, 'registered' ) ) {
-				wp_enqueue_style( $style_handle );
+			foreach ( $header_style_handles as $style_handle ) {
+				if ( wp_style_is( $style_handle, 'registered' ) ) {
+					wp_enqueue_style( $style_handle );
+				}
 			}
 		}
 
@@ -244,6 +254,19 @@ class Enqueue_Scripts {
 		if ( is_rtl() ) {
 			wp_enqueue_style( 'elementskit-rtl', \ElementsKit_Lite::widget_url() . 'init/assets/css/rtl.css', [], \ElementsKit_Lite::version() );
 		}
+	}
+
+	/**
+	 * Whether an ElementsKit Header/Footer Builder template renders on this request.
+	 *
+	 * @return bool
+	 */
+	private function has_header_footer_template() {
+		if ( ! class_exists( Activator::class ) ) {
+			return false;
+		}
+
+		return ! empty( array_filter( (array) Activator::template_ids() ) );
 	}
 
 	/**

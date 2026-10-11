@@ -15,6 +15,8 @@
 		$emailkit = $pluginStatus->get_status( 'emailkit/EmailKit.php' );
 		$popupkit = $pluginStatus->get_status( 'popup-builder-block/popup-builder-block.php' );
 		$gutenkit = $pluginStatus->get_status( 'gutenkit-blocks-addon/gutenkit-blocks-addon.php' );
+		$dynamic_fields_engine = $pluginStatus->get_status( 'rox-dynamic-cpt-fields-engine/rox-dynamic-cpt-fields-engine.php' );
+		$rox_appointment_booking = $pluginStatus->get_status( 'rox-appointment-booking/rox-appointment-booking.php' );
 		$woocommerce = $pluginStatus->get_status( 'woocommerce/woocommerce.php' );
 		$shopengine_pre_check = $woocommerce['status'] == 'activated' ? '' : '';
 		?>
@@ -117,6 +119,40 @@
 					<?php endif; ?>
 					<p class="ekit-onboard-single-plugin--description">
 						<?php echo esc_html__( 'Find top keywords, create winning content & track SEO results with AI.', 'elementskit-lite' ); ?>
+					</p>
+				</label>
+			</div>
+		</div>
+		<div class="attr-col-lg-3">
+			<div class="ekit-onboard-single-plugin <?php echo $dynamic_fields_engine['status'] == 'activated' ? 'activated' : ''; ?>">
+				<label>
+					<div class="ekit-onboard-single-plugin--header">
+						<h3>Dynamic Field Engine</3>
+					</div>
+					<?php if($dynamic_fields_engine['status'] !== 'activated') : ?>
+						<div class="ekit-onboard-single-plugin--checkbox-wrapper">
+							<input type="checkbox" class="ekit-onboard-single-plugin--input" value="rox-dynamic-cpt-fields-engine/rox-dynamic-cpt-fields-engine.php" name="our_plugins[]">
+						</div>
+					<?php endif; ?>
+					<p class="ekit-onboard-single-plugin--description">
+						<?php echo esc_html__( 'Build custom post types, fields, taxonomies, and dynamic layouts without coding.', 'elementskit-lite' ); ?>
+					</p>
+				</label>
+			</div>
+		</div>
+		<div class="attr-col-lg-3">
+			<div class="ekit-onboard-single-plugin <?php echo $rox_appointment_booking['status'] == 'activated' ? 'activated' : ''; ?>">
+				<label>
+					<div class="ekit-onboard-single-plugin--header">
+						<h3>Appointment Booking</3>
+					</div>
+					<?php if($rox_appointment_booking['status'] !== 'activated') : ?>
+						<div class="ekit-onboard-single-plugin--checkbox-wrapper">
+							<input type="checkbox" class="ekit-onboard-single-plugin--input" value="rox-appointment-booking/rox-appointment-booking.php" name="our_plugins[]">
+						</div>
+					<?php endif; ?>
+					<p class="ekit-onboard-single-plugin--description">
+						<?php echo esc_html__( 'Manage appointments, agents, payments, and calendars from one dashboard.', 'elementskit-lite' ); ?>
 					</p>
 				</label>
 			</div>

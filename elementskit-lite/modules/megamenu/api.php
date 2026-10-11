@@ -96,7 +96,18 @@ class Megamenu_Api extends Core\Handler_Api {
 		// would leave the panel CSS out and rely on the page that rendered the menu
 		// having enqueued it already. Ask for the CSS inline so the response styles
 		// itself wherever it is injected.
-		$output = \ElementsKit_Lite\Utils::render_elementor_content( $menu_item_id, true );
+		// Elementor can print inline post CSS before returning the rendered content.
+		// Discard that direct output so it cannot corrupt the REST JSON response.
+		$buffer_level = ob_get_level();
+		ob_start();
+
+		try {
+			$output = \ElementsKit_Lite\Utils::render_elementor_content( $menu_item_id, true );
+		} finally {
+			while ( ob_get_level() > $buffer_level ) {
+				ob_end_clean();
+			}
+		}
 
 		return $output;
 	}

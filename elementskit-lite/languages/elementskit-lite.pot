@@ -2,9 +2,9 @@
 # This file is distributed under the GPLv3 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: ElementsKit Lite 4.0.7\n"
+"Project-Id-Version: ElementsKit Lite 4.0.8\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/elementskit-lite\n"
-"POT-Creation-Date: 2026-09-29 09:34:01+00:00\n"
+"POT-Creation-Date: 2026-10-11 09:05:24+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -92,7 +92,7 @@ msgstr ""
 #: modules/megamenu/views/options-menu-item.php:15
 #: widgets/business-hours/business-hours.php:153
 #: widgets/header-offcanvas/header-offcanvas.php:236
-#: widgets/init/enqueue-scripts.php:134 widgets/team/team.php:2563
+#: widgets/init/enqueue-scripts.php:135 widgets/team/team.php:2563
 msgid "Close"
 msgstr ""
 
@@ -475,6 +475,14 @@ msgstr ""
 msgid "Popup Builder Activated"
 msgstr ""
 
+#: libs/framework/classes/ajax.php:135
+msgid "Dynamic Field Engine Activated"
+msgstr ""
+
+#: libs/framework/classes/ajax.php:136
+msgid "Appointment Booking Activated"
+msgstr ""
+
 #: libs/framework/classes/ajax.php:142
 msgid "Plugin Activated"
 msgstr ""
@@ -662,7 +670,7 @@ msgstr ""
 
 #: libs/framework/views/onboard-steps/step-01.php:64
 #: libs/framework/views/onboard-steps/step-02.php:17
-#: libs/framework/views/onboard-steps/step-03.php:129
+#: libs/framework/views/onboard-steps/step-03.php:165
 #: libs/framework/views/onboard-steps/step-04.php:19
 #: libs/framework/views/onboard-steps/step-05.php:89
 msgid "Back"
@@ -708,37 +716,47 @@ msgstr ""
 msgid "A fleet of plugins with all types of features you will need for WordPress."
 msgstr ""
 
-#: libs/framework/views/onboard-steps/step-03.php:33
+#: libs/framework/views/onboard-steps/step-03.php:35
 msgid "The ultimate solution to build a complete WooCommerce site in Elementor."
 msgstr ""
 
-#: libs/framework/views/onboard-steps/step-03.php:50
+#: libs/framework/views/onboard-steps/step-03.php:52
 msgid "Most flexible form builder for Elementor with a wide range of features."
 msgstr ""
 
-#: libs/framework/views/onboard-steps/step-03.php:68
+#: libs/framework/views/onboard-steps/step-03.php:70
 msgid ""
 "Enhance block capability with page builder features & templates for "
 "Gutenberg."
 msgstr ""
 
-#: libs/framework/views/onboard-steps/step-03.php:85 plugin.php:264
+#: libs/framework/views/onboard-steps/step-03.php:87 plugin.php:264
 msgid "Design popups that convert, right in your WordPress dashboard."
 msgstr ""
 
-#: libs/framework/views/onboard-steps/step-03.php:102
+#: libs/framework/views/onboard-steps/step-03.php:104
 msgid "Drag-and-drop email builder for WooCommerce & WordPress."
 msgstr ""
 
-#: libs/framework/views/onboard-steps/step-03.php:119
+#: libs/framework/views/onboard-steps/step-03.php:121
 msgid "Find top keywords, create winning content & track SEO results with AI."
 msgstr ""
 
-#: libs/framework/views/onboard-steps/step-03.php:132
+#: libs/framework/views/onboard-steps/step-03.php:138
+msgid ""
+"Build custom post types, fields, taxonomies, and dynamic layouts without "
+"coding."
+msgstr ""
+
+#: libs/framework/views/onboard-steps/step-03.php:155 plugin.php:243
+msgid "Manage appointments, agents, payments, and calendars from one dashboard."
+msgstr ""
+
+#: libs/framework/views/onboard-steps/step-03.php:168
 msgid "Continue"
 msgstr ""
 
-#: libs/framework/views/onboard-steps/step-03.php:139
+#: libs/framework/views/onboard-steps/step-03.php:175
 msgid "Unlock All & Continue"
 msgstr ""
 
@@ -1813,6 +1831,14 @@ msgstr ""
 msgid "Edit Content"
 msgstr ""
 
+#: modules/copy-paste-cross-domain/init.php:43
+msgid "ElementsKit Copy"
+msgstr ""
+
+#: modules/copy-paste-cross-domain/init.php:44
+msgid "ElementsKit Paste"
+msgstr ""
+
 #: modules/dynamic-content/cpt-api.php:17
 msgid "You must be logged in."
 msgstr ""
@@ -1939,7 +1965,7 @@ msgstr ""
 #: widgets/nav-menu/nav-menu.php:947 widgets/post-tab/post-tab.php:290
 #: widgets/tab/tab.php:838 widgets/testimonial/testimonial.php:914
 #: widgets/testimonial/testimonial.php:1317
-#: widgets/testimonial/testimonial.php:2097
+#: widgets/testimonial/testimonial.php:2100
 msgid "Active"
 msgstr ""
 
@@ -2119,11 +2145,11 @@ msgstr ""
 msgid "You are not allowed to read these menu item settings."
 msgstr ""
 
-#: modules/megamenu/init.php:66 widgets/testimonial/testimonial.php:2231
+#: modules/megamenu/init.php:66 widgets/testimonial/testimonial.php:2234
 msgid "Prev"
 msgstr ""
 
-#: modules/megamenu/init.php:67 widgets/testimonial/testimonial.php:2253
+#: modules/megamenu/init.php:67 widgets/testimonial/testimonial.php:2256
 msgid "Next"
 msgstr ""
 
@@ -2322,10 +2348,10 @@ msgstr ""
 #: widgets/icon-box/icon-box.php:1406 widgets/icon-box/icon-box.php:1469
 #: widgets/icon-box/icon-box.php:1729
 #: widgets/image-accordion/image-accordion.php:681
-#: widgets/image-box/image-box.php:589 widgets/image-box/image-box.php:708
-#: widgets/image-box/image-box.php:902 widgets/image-box/image-box.php:954
-#: widgets/image-box/image-box.php:1142 widgets/image-box/image-box.php:1419
-#: widgets/image-box/image-box.php:1483 widgets/mail-chimp/mail-chimp.php:499
+#: widgets/image-box/image-box.php:588 widgets/image-box/image-box.php:707
+#: widgets/image-box/image-box.php:901 widgets/image-box/image-box.php:953
+#: widgets/image-box/image-box.php:1141 widgets/image-box/image-box.php:1459
+#: widgets/image-box/image-box.php:1523 widgets/mail-chimp/mail-chimp.php:499
 #: widgets/mail-chimp/mail-chimp.php:549 widgets/mail-chimp/mail-chimp.php:599
 #: widgets/mail-chimp/mail-chimp.php:737 widgets/mail-chimp/mail-chimp.php:775
 #: widgets/mail-chimp/mail-chimp.php:813 widgets/mail-chimp/mail-chimp.php:1267
@@ -2355,12 +2381,12 @@ msgstr ""
 #: widgets/testimonial/testimonial.php:1259
 #: widgets/testimonial/testimonial.php:1300
 #: widgets/testimonial/testimonial.php:1337
-#: widgets/testimonial/testimonial.php:1474
-#: widgets/testimonial/testimonial.php:1795
-#: widgets/testimonial/testimonial.php:2088
-#: widgets/testimonial/testimonial.php:2107
-#: widgets/testimonial/testimonial.php:2370
-#: widgets/testimonial/testimonial.php:2420 widgets/video/video.php:1579
+#: widgets/testimonial/testimonial.php:1476
+#: widgets/testimonial/testimonial.php:1798
+#: widgets/testimonial/testimonial.php:2091
+#: widgets/testimonial/testimonial.php:2110
+#: widgets/testimonial/testimonial.php:2373
+#: widgets/testimonial/testimonial.php:2423 widgets/video/video.php:1579
 #: widgets/video/video.php:1772 widgets/video/video.php:1841
 msgid "Background"
 msgstr ""
@@ -2564,7 +2590,7 @@ msgstr ""
 #: widgets/blog-posts/blog-posts.php:1048
 #: widgets/blog-posts/blog-posts.php:2898 widgets/button/button.php:323
 #: widgets/funfact/funfact.php:94 widgets/icon-box/icon-box.php:88
-#: widgets/image-box/image-box.php:788 widgets/lottie/lottie.php:240
+#: widgets/image-box/image-box.php:787 widgets/lottie/lottie.php:240
 #: widgets/nav-menu/nav-menu.php:159 widgets/pricing/pricing.php:108
 #: widgets/pricing/pricing.php:672 widgets/pricing/pricing.php:899
 #: widgets/pricing/pricing.php:1684 widgets/pricing/pricing.php:1837
@@ -2667,7 +2693,7 @@ msgstr ""
 #: widgets/pricing/pricing.php:1579 widgets/tab/tab.php:172
 #: widgets/testimonial/testimonial.php:164
 #: widgets/testimonial/testimonial.php:954
-#: widgets/testimonial/testimonial.php:1815
+#: widgets/testimonial/testimonial.php:1818
 msgid "Top"
 msgstr ""
 
@@ -2683,8 +2709,8 @@ msgstr ""
 #: widgets/tab/tab.php:1176 widgets/tab/tab.php:1545
 #: widgets/testimonial/testimonial.php:165
 #: widgets/testimonial/testimonial.php:962
-#: widgets/testimonial/testimonial.php:1819
-#: widgets/testimonial/testimonial.php:1919
+#: widgets/testimonial/testimonial.php:1822
+#: widgets/testimonial/testimonial.php:1922
 msgid "Bottom"
 msgstr ""
 
@@ -2732,8 +2758,8 @@ msgstr ""
 #: widgets/team/team.php:1079 widgets/team/team.php:1585
 #: widgets/testimonial/testimonial.php:218
 #: widgets/testimonial/testimonial.php:983
-#: widgets/testimonial/testimonial.php:1811
-#: widgets/testimonial/testimonial.php:1849 widgets/video/video.php:857
+#: widgets/testimonial/testimonial.php:1814
+#: widgets/testimonial/testimonial.php:1852 widgets/video/video.php:857
 #: widgets/video/video.php:1744 widgets/we-forms/we-forms.php:402
 #: widgets/wp-forms/wp-forms.php:117 widgets/wp-forms/wp-forms.php:443
 msgid "Left"
@@ -2778,8 +2804,8 @@ msgstr ""
 #: widgets/team/team.php:551 widgets/team/team.php:727
 #: widgets/team/team.php:1083 widgets/team/team.php:1087
 #: widgets/team/team.php:1593 widgets/testimonial/testimonial.php:991
-#: widgets/testimonial/testimonial.php:1823
-#: widgets/testimonial/testimonial.php:1857 widgets/video/video.php:865
+#: widgets/testimonial/testimonial.php:1826
+#: widgets/testimonial/testimonial.php:1860 widgets/video/video.php:865
 #: widgets/video/video.php:1748 widgets/we-forms/we-forms.php:410
 #: widgets/wp-forms/wp-forms.php:125 widgets/wp-forms/wp-forms.php:451
 msgid "Right"
@@ -3001,12 +3027,6 @@ msgstr ""
 msgid "Rox Appointment Booking"
 msgstr ""
 
-#: plugin.php:243
-msgid ""
-" Manage bookings, agents, payments, and calendars from one dashboard! A "
-"complete appointment and scheduling solution for WordPress."
-msgstr ""
-
 #: plugin.php:247
 msgid "MetForm"
 msgstr ""
@@ -3099,7 +3119,7 @@ msgstr ""
 #: widgets/icon-box/icon-box.php:465 widgets/icon-box/icon-box.php:770
 #: widgets/image-accordion/image-accordion.php:90
 #: widgets/image-accordion/image-accordion.php:465
-#: widgets/image-box/image-box.php:1172 widgets/ninja-forms/ninja-forms.php:112
+#: widgets/image-box/image-box.php:1171 widgets/ninja-forms/ninja-forms.php:112
 #: widgets/piechart/piechart.php:172 widgets/post-grid/post-grid.php:175
 #: widgets/post-tab/post-tab.php:447 widgets/progressbar/progressbar.php:102
 #: widgets/progressbar/progressbar.php:339 widgets/tab/tab.php:361
@@ -3114,7 +3134,7 @@ msgstr ""
 #: widgets/fluent-forms/fluent-forms.php:128
 #: widgets/fluent-forms/fluent-forms.php:307
 #: widgets/fluent-forms/fluent-forms.php:1200 widgets/icon-box/icon-box.php:845
-#: widgets/image-box/image-box.php:255 widgets/image-box/image-box.php:1259
+#: widgets/image-box/image-box.php:255 widgets/image-box/image-box.php:1258
 #: widgets/piechart/piechart.php:189 widgets/team/team.php:1490
 #: widgets/team/team.php:1993 widgets/testimonial/testimonial.php:1065
 msgid "Description"
@@ -3321,7 +3341,7 @@ msgstr ""
 #: widgets/icon-box/icon-box.php:814 widgets/icon-box/icon-box.php:854
 #: widgets/icon-box/icon-box.php:1716
 #: widgets/image-accordion/image-accordion.php:500
-#: widgets/image-box/image-box.php:1219 widgets/image-box/image-box.php:1306
+#: widgets/image-box/image-box.php:1218 widgets/image-box/image-box.php:1305
 #: widgets/image-comparison/image-comparison.php:290
 #: widgets/image-comparison/image-comparison.php:350
 #: widgets/mail-chimp/mail-chimp.php:390 widgets/mail-chimp/mail-chimp.php:487
@@ -3361,10 +3381,10 @@ msgstr ""
 #: widgets/testimonial/testimonial.php:1243
 #: widgets/testimonial/testimonial.php:1280
 #: widgets/testimonial/testimonial.php:1324
-#: widgets/testimonial/testimonial.php:1632
-#: widgets/testimonial/testimonial.php:1697
-#: widgets/testimonial/testimonial.php:2356
-#: widgets/testimonial/testimonial.php:2406 widgets/video/video.php:1785
+#: widgets/testimonial/testimonial.php:1635
+#: widgets/testimonial/testimonial.php:1700
+#: widgets/testimonial/testimonial.php:2359
+#: widgets/testimonial/testimonial.php:2409 widgets/video/video.php:1785
 #: widgets/video/video.php:1855
 msgid "Color"
 msgstr ""
@@ -3386,8 +3406,8 @@ msgstr ""
 #: widgets/fluent-forms/fluent-forms.php:2499
 #: widgets/header-offcanvas/header-offcanvas.php:418
 #: widgets/header-offcanvas/header-offcanvas.php:645
-#: widgets/heading/heading.php:1298 widgets/image-box/image-box.php:813
-#: widgets/image-box/image-box.php:831 widgets/ninja-forms/ninja-forms.php:805
+#: widgets/heading/heading.php:1298 widgets/image-box/image-box.php:812
+#: widgets/image-box/image-box.php:830 widgets/ninja-forms/ninja-forms.php:805
 #: widgets/tablepress/tablepress.php:269 widgets/tablepress/tablepress.php:393
 #: widgets/tablepress/tablepress.php:528 widgets/tablepress/tablepress.php:575
 #: widgets/testimonial/testimonial.php:877 widgets/video/video.php:1798
@@ -3451,8 +3471,8 @@ msgstr ""
 #: widgets/image-accordion/image-accordion.php:709
 #: widgets/image-accordion/image-accordion.php:774
 #: widgets/image-accordion/image-accordion.php:784
-#: widgets/image-box/image-box.php:1121 widgets/image-box/image-box.php:1429
-#: widgets/image-box/image-box.php:1493
+#: widgets/image-box/image-box.php:1120 widgets/image-box/image-box.php:1469
+#: widgets/image-box/image-box.php:1533
 #: widgets/image-comparison/image-comparison.php:223
 #: widgets/mail-chimp/mail-chimp.php:510 widgets/mail-chimp/mail-chimp.php:560
 #: widgets/mail-chimp/mail-chimp.php:610 widgets/mail-chimp/mail-chimp.php:748
@@ -3480,11 +3500,11 @@ msgstr ""
 #: widgets/team/team.php:983 widgets/team/team.php:1264
 #: widgets/team/team.php:1303 widgets/team/team.php:2140
 #: widgets/team/team.php:2207 widgets/testimonial/testimonial.php:845
-#: widgets/testimonial/testimonial.php:1871
-#: widgets/testimonial/testimonial.php:2044
-#: widgets/testimonial/testimonial.php:2163
-#: widgets/testimonial/testimonial.php:2389
-#: widgets/testimonial/testimonial.php:2439 widgets/video/video.php:896
+#: widgets/testimonial/testimonial.php:1874
+#: widgets/testimonial/testimonial.php:2047
+#: widgets/testimonial/testimonial.php:2166
+#: widgets/testimonial/testimonial.php:2392
+#: widgets/testimonial/testimonial.php:2442 widgets/video/video.php:896
 #: widgets/video/video.php:1353 widgets/wp-forms/wp-forms.php:173
 #: widgets/wp-forms/wp-forms.php:313 widgets/wp-forms/wp-forms.php:544
 #: widgets/wp-forms/wp-forms.php:663
@@ -3545,8 +3565,8 @@ msgstr ""
 #: widgets/image-accordion/image-accordion.php:438
 #: widgets/image-accordion/image-accordion.php:733
 #: widgets/image-accordion/image-accordion.php:791
-#: widgets/image-box/image-box.php:1129 widgets/image-box/image-box.php:1436
-#: widgets/image-box/image-box.php:1500
+#: widgets/image-box/image-box.php:1128 widgets/image-box/image-box.php:1476
+#: widgets/image-box/image-box.php:1540
 #: widgets/image-comparison/image-comparison.php:233
 #: widgets/image-comparison/image-comparison.php:586
 #: widgets/mail-chimp/mail-chimp.php:631 widgets/mail-chimp/mail-chimp.php:844
@@ -3572,8 +3592,8 @@ msgstr ""
 #: widgets/team/team.php:1122 widgets/team/team.php:2150
 #: widgets/team/team.php:2215 widgets/testimonial/testimonial.php:815
 #: widgets/testimonial/testimonial.php:1418
-#: widgets/testimonial/testimonial.php:1448
-#: widgets/testimonial/testimonial.php:2451 widgets/video/video.php:904
+#: widgets/testimonial/testimonial.php:1449
+#: widgets/testimonial/testimonial.php:2454 widgets/video/video.php:904
 #: widgets/video/video.php:1483 widgets/video/video.php:1813
 #: widgets/video/video.php:1884 widgets/we-forms/we-forms.php:133
 #: widgets/we-forms/we-forms.php:468 widgets/wp-forms/wp-forms.php:184
@@ -3610,8 +3630,8 @@ msgstr ""
 #: widgets/dual-button/dual-button.php:931 widgets/funfact/funfact.php:557
 #: widgets/funfact/funfact.php:594 widgets/funfact/funfact.php:1159
 #: widgets/icon-box/icon-box.php:609 widgets/icon-box/icon-box.php:689
-#: widgets/icon-box/icon-box.php:1739 widgets/image-box/image-box.php:599
-#: widgets/image-box/image-box.php:893 widgets/image-box/image-box.php:945
+#: widgets/icon-box/icon-box.php:1739 widgets/image-box/image-box.php:598
+#: widgets/image-box/image-box.php:892 widgets/image-box/image-box.php:944
 #: widgets/mail-chimp/mail-chimp.php:519 widgets/mail-chimp/mail-chimp.php:569
 #: widgets/mail-chimp/mail-chimp.php:619 widgets/mail-chimp/mail-chimp.php:757
 #: widgets/mail-chimp/mail-chimp.php:795 widgets/mail-chimp/mail-chimp.php:833
@@ -3622,9 +3642,9 @@ msgstr ""
 #: widgets/pricing/pricing.php:1077 widgets/pricing/pricing.php:1114
 #: widgets/tab/tab.php:548 widgets/tab/tab.php:647 widgets/tab/tab.php:829
 #: widgets/tab/tab.php:885 widgets/tab/tab.php:2063
-#: widgets/testimonial/testimonial.php:1883
-#: widgets/testimonial/testimonial.php:2380
-#: widgets/testimonial/testimonial.php:2430 widgets/video/video.php:1549
+#: widgets/testimonial/testimonial.php:1886
+#: widgets/testimonial/testimonial.php:2383
+#: widgets/testimonial/testimonial.php:2433 widgets/video/video.php:1549
 msgid "Box Shadow"
 msgstr ""
 
@@ -3677,8 +3697,8 @@ msgstr ""
 #: widgets/image-accordion/image-accordion.php:405
 #: widgets/image-accordion/image-accordion.php:580
 #: widgets/image-accordion/image-accordion.php:631
-#: widgets/image-box/image-box.php:992 widgets/image-box/image-box.php:1151
-#: widgets/image-box/image-box.php:1356
+#: widgets/image-box/image-box.php:991 widgets/image-box/image-box.php:1150
+#: widgets/image-box/image-box.php:1355
 #: widgets/image-comparison/image-comparison.php:245
 #: widgets/image-comparison/image-comparison.php:330
 #: widgets/image-comparison/image-comparison.php:389
@@ -3706,7 +3726,7 @@ msgstr ""
 #: widgets/testimonial/testimonial.php:788
 #: widgets/testimonial/testimonial.php:1008
 #: widgets/testimonial/testimonial.php:1403
-#: widgets/testimonial/testimonial.php:2465 widgets/video/video.php:883
+#: widgets/testimonial/testimonial.php:2468 widgets/video/video.php:883
 #: widgets/video/video.php:964 widgets/we-forms/we-forms.php:120
 #: widgets/we-forms/we-forms.php:276 widgets/we-forms/we-forms.php:440
 #: widgets/wp-forms/wp-forms.php:268 widgets/wp-forms/wp-forms.php:367
@@ -3730,8 +3750,8 @@ msgstr ""
 #: widgets/team/team.php:1377 widgets/team/team.php:1463
 #: widgets/team/team.php:1916 widgets/team/team.php:1968
 #: widgets/team/team.php:2024 widgets/testimonial/testimonial.php:1382
-#: widgets/testimonial/testimonial.php:1664
-#: widgets/testimonial/testimonial.php:1754
+#: widgets/testimonial/testimonial.php:1667
+#: widgets/testimonial/testimonial.php:1757
 msgid "Margin Bottom"
 msgstr ""
 
@@ -3754,8 +3774,8 @@ msgstr ""
 #: widgets/heading/heading.php:964 widgets/heading/heading.php:1153
 #: widgets/icon-box/icon-box.php:1218
 #: widgets/image-accordion/image-accordion.php:815
-#: widgets/image-box/image-box.php:565 widgets/image-box/image-box.php:621
-#: widgets/image-box/image-box.php:869 widgets/image-box/image-box.php:921
+#: widgets/image-box/image-box.php:564 widgets/image-box/image-box.php:620
+#: widgets/image-box/image-box.php:868 widgets/image-box/image-box.php:920
 #: widgets/mail-chimp/mail-chimp.php:686 widgets/mail-chimp/mail-chimp.php:1200
 #: widgets/mail-chimp/mail-chimp.php:1525 widgets/nav-menu/nav-menu.php:389
 #: widgets/nav-menu/nav-menu.php:1193 widgets/nav-menu/nav-menu.php:1416
@@ -3769,10 +3789,10 @@ msgstr ""
 #: widgets/tab/tab.php:1111 widgets/tab/tab.php:1232 widgets/tab/tab.php:1485
 #: widgets/tab/tab.php:1795 widgets/team/team.php:935
 #: widgets/team/team.php:1183 widgets/team/team.php:1737
-#: widgets/team/team.php:2283 widgets/testimonial/testimonial.php:1555
-#: widgets/testimonial/testimonial.php:1997
-#: widgets/testimonial/testimonial.php:2116
-#: widgets/testimonial/testimonial.php:2275 widgets/video/video.php:1120
+#: widgets/team/team.php:2283 widgets/testimonial/testimonial.php:1558
+#: widgets/testimonial/testimonial.php:2000
+#: widgets/testimonial/testimonial.php:2119
+#: widgets/testimonial/testimonial.php:2278 widgets/video/video.php:1120
 #: widgets/video/video.php:1623 widgets/wp-forms/wp-forms.php:425
 #: widgets/wp-forms/wp-forms.php:469
 msgid "Width"
@@ -3839,7 +3859,7 @@ msgstr ""
 #: widgets/heading/heading.php:1206 widgets/icon-box/icon-box.php:778
 #: widgets/icon-box/icon-box.php:886 widgets/icon-box/icon-box.php:1300
 #: widgets/image-accordion/image-accordion.php:418
-#: widgets/image-box/image-box.php:644
+#: widgets/image-box/image-box.php:643
 #: widgets/image-comparison/image-comparison.php:318
 #: widgets/image-comparison/image-comparison.php:377
 #: widgets/image-comparison/image-comparison.php:573
@@ -3859,9 +3879,9 @@ msgstr ""
 #: widgets/team/team.php:1552 widgets/team/team.php:1678
 #: widgets/testimonial/testimonial.php:800
 #: widgets/testimonial/testimonial.php:1106
-#: widgets/testimonial/testimonial.php:1600
-#: widgets/testimonial/testimonial.php:1728
-#: widgets/testimonial/testimonial.php:1946 widgets/we-forms/we-forms.php:264
+#: widgets/testimonial/testimonial.php:1603
+#: widgets/testimonial/testimonial.php:1731
+#: widgets/testimonial/testimonial.php:1949 widgets/we-forms/we-forms.php:264
 #: widgets/we-forms/we-forms.php:428 widgets/wp-forms/wp-forms.php:281
 #: widgets/wp-forms/wp-forms.php:578
 msgid "Margin"
@@ -3926,7 +3946,7 @@ msgstr ""
 #: widgets/social/social.php:400 widgets/social-share/social-share.php:148
 #: widgets/social-share/social-share.php:433 widgets/team/team.php:715
 #: widgets/team/team.php:1075 widgets/team/team.php:1581
-#: widgets/testimonial/testimonial.php:1845 widgets/video/video.php:852
+#: widgets/testimonial/testimonial.php:1848 widgets/video/video.php:852
 #: widgets/wp-forms/wp-forms.php:113 widgets/wp-forms/wp-forms.php:439
 msgid "Alignment"
 msgstr ""
@@ -3966,7 +3986,7 @@ msgstr ""
 #: widgets/tablepress/tablepress.php:188 widgets/team/team.php:723
 #: widgets/team/team.php:1589 widgets/testimonial/testimonial.php:958
 #: widgets/testimonial/testimonial.php:987
-#: widgets/testimonial/testimonial.php:1853 widgets/video/video.php:861
+#: widgets/testimonial/testimonial.php:1856 widgets/video/video.php:861
 #: widgets/we-forms/we-forms.php:406 widgets/wp-forms/wp-forms.php:121
 #: widgets/wp-forms/wp-forms.php:447
 msgid "Center"
@@ -4020,8 +4040,8 @@ msgstr ""
 #: widgets/header-search/header-search.php:396
 #: widgets/icon-box/icon-box.php:1313 widgets/icon-box/icon-box.php:1748
 #: widgets/image-accordion/image-accordion.php:652
-#: widgets/image-box/image-box.php:1202 widgets/image-box/image-box.php:1289
-#: widgets/image-box/image-box.php:1369 widgets/mail-chimp/mail-chimp.php:382
+#: widgets/image-box/image-box.php:1201 widgets/image-box/image-box.php:1288
+#: widgets/image-box/image-box.php:1368 widgets/mail-chimp/mail-chimp.php:382
 #: widgets/mail-chimp/mail-chimp.php:717 widgets/mail-chimp/mail-chimp.php:1129
 #: widgets/nav-menu/nav-menu.php:469 widgets/nav-menu/nav-menu.php:838
 #: widgets/nav-menu/nav-menu.php:1368 widgets/ninja-forms/ninja-forms.php:134
@@ -4097,9 +4117,9 @@ msgstr ""
 #: widgets/icon-box/icon-box.php:1386 widgets/icon-box/icon-box.php:1597
 #: widgets/image-accordion/image-accordion.php:662
 #: widgets/image-accordion/image-accordion.php:868
-#: widgets/image-box/image-box.php:419 widgets/image-box/image-box.php:807
-#: widgets/image-box/image-box.php:1008 widgets/image-box/image-box.php:1212
-#: widgets/image-box/image-box.php:1299 widgets/image-box/image-box.php:1398
+#: widgets/image-box/image-box.php:419 widgets/image-box/image-box.php:806
+#: widgets/image-box/image-box.php:1007 widgets/image-box/image-box.php:1211
+#: widgets/image-box/image-box.php:1298 widgets/image-box/image-box.php:1438
 #: widgets/image-comparison/image-comparison.php:457
 #: widgets/lottie/lottie.php:262 widgets/mail-chimp/mail-chimp.php:480
 #: widgets/mail-chimp/mail-chimp.php:729 widgets/mail-chimp/mail-chimp.php:1246
@@ -4122,8 +4142,8 @@ msgstr ""
 #: widgets/team/team.php:1509 widgets/team/team.php:2104
 #: widgets/testimonial/testimonial.php:828
 #: widgets/testimonial/testimonial.php:1236
-#: widgets/testimonial/testimonial.php:1505
-#: widgets/testimonial/testimonial.php:2349 widgets/video/video.php:1288
+#: widgets/testimonial/testimonial.php:1508
+#: widgets/testimonial/testimonial.php:2352 widgets/video/video.php:1288
 #: widgets/video/video.php:1430 widgets/video/video.php:1765
 #: widgets/we-forms/we-forms.php:180 widgets/we-forms/we-forms.php:506
 #: widgets/wp-forms/wp-forms.php:141 widgets/wp-forms/wp-forms.php:493
@@ -4161,9 +4181,9 @@ msgstr ""
 #: widgets/image-accordion/image-accordion.php:326
 #: widgets/image-accordion/image-accordion.php:748
 #: widgets/image-accordion/image-accordion.php:911
-#: widgets/image-box/image-box.php:463 widgets/image-box/image-box.php:825
-#: widgets/image-box/image-box.php:1042 widgets/image-box/image-box.php:1234
-#: widgets/image-box/image-box.php:1319 widgets/image-box/image-box.php:1463
+#: widgets/image-box/image-box.php:463 widgets/image-box/image-box.php:824
+#: widgets/image-box/image-box.php:1041 widgets/image-box/image-box.php:1233
+#: widgets/image-box/image-box.php:1318 widgets/image-box/image-box.php:1503
 #: widgets/image-comparison/image-comparison.php:514
 #: widgets/lottie/lottie.php:295 widgets/mail-chimp/mail-chimp.php:530
 #: widgets/mail-chimp/mail-chimp.php:767 widgets/mail-chimp/mail-chimp.php:1287
@@ -4185,8 +4205,8 @@ msgstr ""
 #: widgets/team/team.php:1432 widgets/team/team.php:1529
 #: widgets/team/team.php:2171 widgets/testimonial/testimonial.php:861
 #: widgets/testimonial/testimonial.php:1273
-#: widgets/testimonial/testimonial.php:1525
-#: widgets/testimonial/testimonial.php:2399 widgets/video/video.php:1319
+#: widgets/testimonial/testimonial.php:1528
+#: widgets/testimonial/testimonial.php:2402 widgets/video/video.php:1319
 #: widgets/video/video.php:1457 widgets/video/video.php:1834
 #: widgets/we-forms/we-forms.php:538 widgets/wp-forms/wp-forms.php:592
 msgid "Hover"
@@ -4230,7 +4250,7 @@ msgid "Show Featured Image"
 msgstr ""
 
 #: widgets/blog-posts/blog-posts.php:124
-#: widgets/testimonial/testimonial.php:1807
+#: widgets/testimonial/testimonial.php:1810
 msgid "Image Position"
 msgstr ""
 
@@ -4584,10 +4604,10 @@ msgstr ""
 #: widgets/header-offcanvas/header-offcanvas.php:711
 #: widgets/header-search/header-search.php:206
 #: widgets/header-search/header-search.php:423
-#: widgets/image-box/image-box.php:979 widgets/page-list/page-list.php:928
+#: widgets/image-box/image-box.php:978 widgets/page-list/page-list.php:928
 #: widgets/social/social.php:463 widgets/social-share/social-share.php:496
 #: widgets/team/team.php:996 widgets/team/team.php:1628
-#: widgets/testimonial/testimonial.php:2052
+#: widgets/testimonial/testimonial.php:2055
 msgid "Border radius"
 msgstr ""
 
@@ -4663,10 +4683,10 @@ msgstr ""
 #: widgets/tab/tab.php:1821 widgets/team/team.php:895
 #: widgets/team/team.php:1208 widgets/team/team.php:1768
 #: widgets/team/team.php:2304 widgets/testimonial/testimonial.php:1032
-#: widgets/testimonial/testimonial.php:1577
-#: widgets/testimonial/testimonial.php:2020
-#: widgets/testimonial/testimonial.php:2139
-#: widgets/testimonial/testimonial.php:2299 widgets/video/video.php:1151
+#: widgets/testimonial/testimonial.php:1580
+#: widgets/testimonial/testimonial.php:2023
+#: widgets/testimonial/testimonial.php:2142
+#: widgets/testimonial/testimonial.php:2302 widgets/video/video.php:1151
 #: widgets/video/video.php:1650
 msgid "Height"
 msgstr ""
@@ -4706,14 +4726,14 @@ msgstr ""
 #: widgets/blog-posts/blog-posts.php:1921
 #: widgets/client-logo/client-logo.php:601 widgets/funfact/funfact.php:411
 #: widgets/funfact/funfact.php:454 widgets/icon-box/icon-box.php:1637
-#: widgets/image-box/image-box.php:724
+#: widgets/image-box/image-box.php:723
 msgid "From Left"
 msgstr ""
 
 #: widgets/blog-posts/blog-posts.php:1925
 #: widgets/client-logo/client-logo.php:613 widgets/funfact/funfact.php:415
 #: widgets/funfact/funfact.php:458 widgets/icon-box/icon-box.php:1645
-#: widgets/image-box/image-box.php:732
+#: widgets/image-box/image-box.php:731
 msgid "From Right"
 msgstr ""
 
@@ -4742,8 +4762,8 @@ msgstr ""
 #: widgets/client-logo/client-logo.php:1490
 #: widgets/client-logo/client-logo.php:1509
 #: widgets/fluent-forms/fluent-forms.php:1278
-#: widgets/testimonial/testimonial.php:1512
-#: widgets/testimonial/testimonial.php:1532
+#: widgets/testimonial/testimonial.php:1515
+#: widgets/testimonial/testimonial.php:1535
 msgid "Separator Color"
 msgstr ""
 
@@ -4790,7 +4810,7 @@ msgstr ""
 #: widgets/fluent-forms/fluent-forms.php:2142
 #: widgets/icon-box/icon-box.php:1279
 #: widgets/image-accordion/image-accordion.php:623
-#: widgets/image-box/image-box.php:303 widgets/image-box/image-box.php:1346
+#: widgets/image-box/image-box.php:303 widgets/image-box/image-box.php:1345
 #: widgets/mail-chimp/mail-chimp.php:997 widgets/pricing/pricing.php:376
 #: widgets/pricing/pricing.php:2115 widgets/pricing/pricing.php:2499
 #: widgets/video/video.php:921 widgets/we-forms/we-forms.php:349
@@ -4798,7 +4818,7 @@ msgid "Button"
 msgstr ""
 
 #: widgets/blog-posts/blog-posts.php:2804 widgets/icon-box/icon-box.php:1320
-#: widgets/image-box/image-box.php:517 widgets/image-box/image-box.php:1376
+#: widgets/image-box/image-box.php:517 widgets/image-box/image-box.php:1375
 msgid "Icon Font Size"
 msgstr ""
 
@@ -4817,7 +4837,7 @@ msgstr ""
 #: widgets/icon-box/icon-box.php:1457
 #: widgets/image-accordion/image-accordion.php:669
 #: widgets/image-accordion/image-accordion.php:755
-#: widgets/image-box/image-box.php:1405 widgets/image-box/image-box.php:1470
+#: widgets/image-box/image-box.php:1445 widgets/image-box/image-box.php:1510
 #: widgets/ninja-forms/ninja-forms.php:121
 #: widgets/ninja-forms/ninja-forms.php:172
 #: widgets/ninja-forms/ninja-forms.php:289
@@ -4939,7 +4959,7 @@ msgstr ""
 #: widgets/mail-chimp/mail-chimp.php:969 widgets/nav-menu/nav-menu.php:712
 #: widgets/team/team.php:1149 widgets/team/team.php:2237
 #: widgets/testimonial/testimonial.php:1160
-#: widgets/testimonial/testimonial.php:2208
+#: widgets/testimonial/testimonial.php:2211
 msgid "Font Size"
 msgstr ""
 
@@ -5023,7 +5043,7 @@ msgid "On"
 msgstr ""
 
 #: widgets/category-list/category-list.php:213 widgets/heading/heading.php:360
-#: widgets/image-box/image-box.php:789 widgets/page-list/page-list.php:465
+#: widgets/image-box/image-box.php:788 widgets/page-list/page-list.php:465
 #: widgets/post-list/post-list.php:657 widgets/pricing/pricing.php:1934
 #: widgets/tablepress/tablepress.php:232 widgets/tablepress/tablepress.php:359
 #: widgets/tablepress/tablepress.php:442
@@ -5032,7 +5052,7 @@ msgstr ""
 
 #: widgets/category-list/category-list.php:214
 #: widgets/client-logo/client-logo.php:1157 widgets/heading/heading.php:359
-#: widgets/image-box/image-box.php:791 widgets/page-list/page-list.php:466
+#: widgets/image-box/image-box.php:790 widgets/page-list/page-list.php:466
 #: widgets/post-list/post-list.php:658 widgets/pricing/pricing.php:1936
 #: widgets/tablepress/tablepress.php:234 widgets/tablepress/tablepress.php:361
 #: widgets/tablepress/tablepress.php:444
@@ -5040,7 +5060,7 @@ msgid "Dotted"
 msgstr ""
 
 #: widgets/category-list/category-list.php:215
-#: widgets/client-logo/client-logo.php:1156 widgets/image-box/image-box.php:792
+#: widgets/client-logo/client-logo.php:1156 widgets/image-box/image-box.php:791
 #: widgets/page-list/page-list.php:467 widgets/post-list/post-list.php:659
 #: widgets/pricing/pricing.php:1937 widgets/tablepress/tablepress.php:235
 #: widgets/tablepress/tablepress.php:362 widgets/tablepress/tablepress.php:445
@@ -5063,7 +5083,7 @@ msgstr ""
 
 #: widgets/client-logo/client-logo-handler.php:12
 #: widgets/client-logo/client-logo.php:98
-#: widgets/testimonial/testimonial.php:1741
+#: widgets/testimonial/testimonial.php:1744
 msgid "Client Logo"
 msgstr ""
 
@@ -5088,7 +5108,7 @@ msgstr ""
 
 #: widgets/client-logo/client-logo.php:85
 #: widgets/testimonial/testimonial.php:324
-#: widgets/testimonial/testimonial.php:1624
+#: widgets/testimonial/testimonial.php:1627
 msgid "Client Name"
 msgstr ""
 
@@ -5515,7 +5535,7 @@ msgstr ""
 #: widgets/countdown-timer/countdown-timer.php:1719
 #: widgets/heading/heading.php:427
 #: widgets/image-accordion/image-accordion.php:338
-#: widgets/image-box/image-box.php:1113
+#: widgets/image-box/image-box.php:1112
 #: widgets/image-comparison/image-comparison.php:213
 msgid "General"
 msgstr ""
@@ -5763,7 +5783,7 @@ msgstr ""
 #: widgets/fluent-forms/fluent-forms.php:758
 #: widgets/fluent-forms/fluent-forms.php:1983 widgets/funfact/funfact.php:903
 #: widgets/funfact/funfact.php:947 widgets/icon-box/icon-box.php:1133
-#: widgets/image-box/image-box.php:1181 widgets/image-box/image-box.php:1268
+#: widgets/image-box/image-box.php:1180 widgets/image-box/image-box.php:1267
 #: widgets/nav-menu/nav-menu.php:846 widgets/ninja-forms/ninja-forms.php:215
 #: widgets/ninja-forms/ninja-forms.php:452
 #: widgets/ninja-forms/ninja-forms.php:547 widgets/pricing/pricing.php:2078
@@ -5792,7 +5812,7 @@ msgstr ""
 #: widgets/fluent-forms/fluent-forms.php:1000 widgets/heading/heading.php:521
 #: widgets/heading/heading.php:1280
 #: widgets/image-accordion/image-accordion.php:854
-#: widgets/image-box/image-box.php:761 widgets/tablepress/tablepress.php:250
+#: widgets/image-box/image-box.php:760 widgets/tablepress/tablepress.php:250
 #: widgets/tablepress/tablepress.php:374 widgets/tablepress/tablepress.php:457
 msgid "Border Width"
 msgstr ""
@@ -5905,7 +5925,7 @@ msgid "Submit Button"
 msgstr ""
 
 #: widgets/fluent-forms/fluent-forms.php:2428
-#: widgets/image-box/image-box.php:542
+#: widgets/image-box/image-box.php:541
 msgid "Margin Top"
 msgstr ""
 
@@ -5928,7 +5948,7 @@ msgid "Icon type "
 msgstr ""
 
 #: widgets/funfact/funfact.php:90 widgets/icon-box/icon-box.php:96
-#: widgets/image-box/image-box.php:57 widgets/image-box/image-box.php:971
+#: widgets/image-box/image-box.php:57 widgets/image-box/image-box.php:970
 #: widgets/piechart/piechart.php:113 widgets/post-tab/post-tab.php:355
 #: widgets/pricing/pricing.php:116 widgets/tab/tab.php:396
 #: widgets/team/team.php:834
@@ -6032,7 +6052,7 @@ msgid "Hover Border Bottom Color"
 msgstr ""
 
 #: widgets/funfact/funfact.php:407 widgets/icon-box/icon-box.php:1633
-#: widgets/image-box/image-box.php:720
+#: widgets/image-box/image-box.php:719
 msgid "Hover Direction"
 msgstr ""
 
@@ -6106,7 +6126,7 @@ msgstr ""
 msgid "Devider"
 msgstr ""
 
-#: widgets/funfact/funfact.php:1290 widgets/image-box/image-box.php:728
+#: widgets/funfact/funfact.php:1290 widgets/image-box/image-box.php:727
 msgid "From Center"
 msgstr ""
 
@@ -6248,7 +6268,7 @@ msgid "Search Container"
 msgstr ""
 
 #: widgets/header-search/header-search.php:414
-#: widgets/image-box/image-box.php:784
+#: widgets/image-box/image-box.php:783
 msgid "Border Type"
 msgstr ""
 
@@ -6638,6 +6658,7 @@ msgid "Vertical Position "
 msgstr ""
 
 #: widgets/icon-box/icon-box.php:1344 widgets/icon-box/icon-box.php:1364
+#: widgets/image-box/image-box.php:1396 widgets/image-box/image-box.php:1416
 msgid "Icon Space"
 msgstr ""
 
@@ -6800,7 +6821,7 @@ msgstr ""
 msgid "Content Area"
 msgstr ""
 
-#: widgets/image-box/image-box.php:96 widgets/image-box/image-box.php:610
+#: widgets/image-box/image-box.php:96 widgets/image-box/image-box.php:609
 msgid "Classic Curves"
 msgstr ""
 
@@ -6812,7 +6833,7 @@ msgstr ""
 msgid "Hover Border"
 msgstr ""
 
-#: widgets/image-box/image-box.php:99 widgets/image-box/image-box.php:750
+#: widgets/image-box/image-box.php:99 widgets/image-box/image-box.php:749
 msgid "Side Line"
 msgstr ""
 
@@ -6820,7 +6841,7 @@ msgstr ""
 msgid "Shadow line"
 msgstr ""
 
-#: widgets/image-box/image-box.php:164 widgets/image-box/image-box.php:1105
+#: widgets/image-box/image-box.php:164 widgets/image-box/image-box.php:1104
 #: widgets/tab/tab.php:1999 widgets/tablepress/tablepress.php:429
 msgid "Body"
 msgstr ""
@@ -6844,41 +6865,41 @@ msgstr ""
 msgid "Hover Height"
 msgstr ""
 
-#: widgets/image-box/image-box.php:670
+#: widgets/image-box/image-box.php:669
 msgid "Hover Border Bottom"
 msgstr ""
 
-#: widgets/image-box/image-box.php:681
+#: widgets/image-box/image-box.php:680
 msgid "Border Bottom Height"
 msgstr ""
 
-#: widgets/image-box/image-box.php:790 widgets/pricing/pricing.php:1935
+#: widgets/image-box/image-box.php:789 widgets/pricing/pricing.php:1935
 #: widgets/tablepress/tablepress.php:233 widgets/tablepress/tablepress.php:360
 #: widgets/tablepress/tablepress.php:443
 msgid "Double"
 msgstr ""
 
-#: widgets/image-box/image-box.php:847
+#: widgets/image-box/image-box.php:846
 msgid "Shadow Line"
 msgstr ""
 
-#: widgets/image-box/image-box.php:862
+#: widgets/image-box/image-box.php:861
 msgid "Left Line"
 msgstr ""
 
-#: widgets/image-box/image-box.php:914
+#: widgets/image-box/image-box.php:913
 msgid "Right Line"
 msgstr ""
 
-#: widgets/image-box/image-box.php:1015 widgets/image-box/image-box.php:1049
+#: widgets/image-box/image-box.php:1014 widgets/image-box/image-box.php:1048
 msgid "Image opacity"
 msgstr ""
 
-#: widgets/image-box/image-box.php:1073
+#: widgets/image-box/image-box.php:1072
 msgid "Image Scale on Hover"
 msgstr ""
 
-#: widgets/image-box/image-box.php:1241 widgets/image-box/image-box.php:1326
+#: widgets/image-box/image-box.php:1240 widgets/image-box/image-box.php:1325
 msgid "Color (Hover)"
 msgstr ""
 
@@ -6955,27 +6976,27 @@ msgstr ""
 msgid "Image comparison slider"
 msgstr ""
 
-#: widgets/init/enqueue-scripts.php:133 widgets/video/video.php:2136
+#: widgets/init/enqueue-scripts.php:134 widgets/video/video.php:2136
 msgid "Video player"
 msgstr ""
 
-#: widgets/init/enqueue-scripts.php:139
+#: widgets/init/enqueue-scripts.php:140
 msgid "Previous slide"
 msgstr ""
 
-#: widgets/init/enqueue-scripts.php:140
+#: widgets/init/enqueue-scripts.php:141
 msgid "Next slide"
 msgstr ""
 
-#: widgets/init/enqueue-scripts.php:141
+#: widgets/init/enqueue-scripts.php:142
 msgid "This is the first slide"
 msgstr ""
 
-#: widgets/init/enqueue-scripts.php:142
+#: widgets/init/enqueue-scripts.php:143
 msgid "This is the last slide"
 msgstr ""
 
-#: widgets/init/enqueue-scripts.php:144
+#: widgets/init/enqueue-scripts.php:145
 #. translators: {{index}} is replaced by Swiper with the slide number. Keep it
 #. as-is.
 msgid "Go to slide {{index}}"
@@ -7988,7 +8009,7 @@ msgstr ""
 msgid "List Gap"
 msgstr ""
 
-#: widgets/pricing/pricing.php:2097 widgets/testimonial/testimonial.php:2323
+#: widgets/pricing/pricing.php:2097 widgets/testimonial/testimonial.php:2326
 msgid "Vertical Align"
 msgstr ""
 
@@ -8600,7 +8621,7 @@ msgstr ""
 msgid "Remove Gutter?"
 msgstr ""
 
-#: widgets/team/team.php:842 widgets/testimonial/testimonial.php:1894
+#: widgets/team/team.php:842 widgets/testimonial/testimonial.php:1897
 msgid "Image Size"
 msgstr ""
 
@@ -8786,8 +8807,8 @@ msgstr ""
 
 #: widgets/testimonial/testimonial.php:1085
 #: widgets/testimonial/testimonial.php:1146
-#: widgets/testimonial/testimonial.php:1644
-#: widgets/testimonial/testimonial.php:1708
+#: widgets/testimonial/testimonial.php:1647
+#: widgets/testimonial/testimonial.php:1711
 msgid "Hover & Active Color"
 msgstr ""
 
@@ -8803,39 +8824,39 @@ msgstr ""
 msgid "Review Margin"
 msgstr ""
 
-#: widgets/testimonial/testimonial.php:1489
+#: widgets/testimonial/testimonial.php:1492
 msgid "Title Separetor"
 msgstr ""
 
-#: widgets/testimonial/testimonial.php:1615
+#: widgets/testimonial/testimonial.php:1618
 msgid "Client"
 msgstr ""
 
-#: widgets/testimonial/testimonial.php:1688
+#: widgets/testimonial/testimonial.php:1691
 msgid "Client Designation"
 msgstr ""
 
-#: widgets/testimonial/testimonial.php:1783
+#: widgets/testimonial/testimonial.php:1786
 msgid "Client Image"
 msgstr ""
 
-#: widgets/testimonial/testimonial.php:1963
+#: widgets/testimonial/testimonial.php:1966
 msgid "Dot"
 msgstr ""
 
-#: widgets/testimonial/testimonial.php:1974
+#: widgets/testimonial/testimonial.php:1977
 msgid "Dot Top Spacing"
 msgstr ""
 
-#: widgets/testimonial/testimonial.php:2064
+#: widgets/testimonial/testimonial.php:2067
 msgid "Margin right"
 msgstr ""
 
-#: widgets/testimonial/testimonial.php:2171
+#: widgets/testimonial/testimonial.php:2174
 msgid "Scale"
 msgstr ""
 
-#: widgets/testimonial/testimonial.php:2197
+#: widgets/testimonial/testimonial.php:2200
 msgid "Nav"
 msgstr ""
 

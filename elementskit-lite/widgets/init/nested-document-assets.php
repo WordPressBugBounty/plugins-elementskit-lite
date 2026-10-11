@@ -142,6 +142,7 @@ class Nested_Document_Assets {
 
 		// On term and author archives the queried object ID is a term or user ID, not a post ID.
 		$document_ids = get_queried_object() instanceof \WP_Post ? array( get_queried_object_id() ) : array();
+		$document_ids = array_merge( $document_ids, $this->get_shopengine_document_ids() );
 
 		if ( class_exists( Activator::class ) ) {
 			$document_ids = array_merge( $document_ids, (array) Activator::template_ids() );
@@ -180,6 +181,30 @@ class Nested_Document_Assets {
 				}
 			}
 		}
+	}
+
+	/**
+	 * Get the ShopEngine template that replaces the current WooCommerce screen.
+	 *
+	 * ShopEngine renders its template through `the_content`, so the queried object is
+	 * still the product, shop, cart, checkout, or account page. Consequently Elementor
+	 * and ElementsKit cannot discover the actual `shopengine-template` document during
+	 * their normal head asset pass. ShopEngine resolves the active (and translated)
+	 * template before `wp_enqueue_scripts`; reuse that result instead of duplicating its
+	 * WooCommerce condition and language/category selection logic here.
+	 *
+	 * @since 4.0.7
+	 * @return int[]
+	 */
+	private function get_shopengine_document_ids() {
+		if ( ! class_exists( '\\ShopEngine\\Core\\Page_Templates\\Hooks\\Base_Content' ) ) {
+			return array();
+		}
+
+		$shopengine_content = \ShopEngine\Core\Page_Templates\Hooks\Base_Content::instance();
+		$template_id        = isset( $shopengine_content->prod_tpl_id ) ? absint( $shopengine_content->prod_tpl_id ) : 0;
+
+		return $template_id ? array( $template_id ) : array();
 	}
 
 	/**
