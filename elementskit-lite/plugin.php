@@ -91,7 +91,7 @@ class Plugin {
 			} );
 		}
 
-		if ( is_admin() && Libs\Framework\Classes\Utils::instance()->get_settings( 'ekit_user_consent_for_banner', 'yes' ) == 'yes' ) {
+		if ( is_admin() && Libs\Framework\Classes\Utils::instance()->get_settings( 'ekit_user_consent_for_banner', 'no' ) == 'yes' ) {
 			$filter_string = \ElementsKit_Lite::active_plugins();
 			/**
 			 * Show WPMET stories widget in dashboard
@@ -303,7 +303,7 @@ class Plugin {
 		) # @plugins
 		->call();
 
-		$user_consent = Libs\Framework\Classes\Utils::instance()->get_settings('ekit_user_consent_for_banner', 'yes') == 'yes';
+		$user_consent = Libs\Framework\Classes\Utils::instance()->get_settings( 'ekit_user_consent_for_banner', 'no' ) == 'yes';
 
 		/**
 		 * EmailKit Global Class initialization

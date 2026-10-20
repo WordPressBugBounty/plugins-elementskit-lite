@@ -108,44 +108,13 @@ class ElementsKit_Widget_Nav_Menu extends Widget_Base {
             ]
         );
 
-		if(\ElementsKit_Lite::license_status() === 'valid') {
-			$this->add_control(
-				'elementskit_submenu_indicator_icon',
-				[
-					'label' => esc_html__( 'Dropdown Indicator Icon', 'elementskit-lite' ),
-					'type' => Controls_Manager::ICONS,
-					'skin' => 'inline',
-					'exclude_inline_options' => ['svg'],
-					'skin_settings' => [
-						'inline' => [
-							'none' => [
-								'label' => esc_html__( 'Default', 'elementskit-lite' ),
-								'icon' => 'icon icon-down-arrow1',
-							],
-							'icon' => [
-								'label' => esc_html__( 'Icon Library', 'elementskit-lite' ),
-								'icon' => 'fas fa-external-link-alt',
-							],
-						],
-					],
-					'recommended' => [
-						'ekiticons' => [
-							'down-arrow1',
-							'arrow-point-to-down',
-							'plus',
-							'link',
-						],
-						'fa-solid' => [
-							'plus',
-							'external-link-alt',
-							'link',
-							'angle-down',
-						],
-					],
-					'label_block' => false,
-				]
-			);
-		} else {
+		/**
+		 * Allow the companion plugin to add its indicator control at the original
+		 * position without shipping the Pro implementation in Lite.
+		 */
+		do_action( 'elementskit/nav_menu/after_dropdown_behavior_control', $this );
+
+		if ( apply_filters( 'elementskit/nav_menu/show_lite_indicator_control', true ) ) {
 			$this->add_control(
 				'elementskit_style_tab_submenu_item_arrow',
 				[
@@ -1828,11 +1797,9 @@ class ElementsKit_Widget_Nav_Menu extends Widget_Base {
 		$icon_html = '';
 		$indicator_class = 'elementskit-submenu-indicator';
 
-		// if ElementsKit Pro activate and licenced is activated
-		if (\ElementsKit_Lite::license_status() === 'valid') {
-			if(!empty($elementskit_submenu_indicator_icon['value'])) {
-				return Icons_Manager::try_get_icon_html($settings['elementskit_submenu_indicator_icon'], ['class' => $indicator_class, 'aria-hidden' => 'true']);
-			}
+		$pro_indicator = apply_filters( 'elementskit/nav_menu/submenu_indicator_html', '', $settings, $indicator_class );
+		if ( '' !== $pro_indicator ) {
+			return $pro_indicator;
 		} elseif(!empty($elementskit_style_tab_submenu_item_arrow)) {
 			$icon_class_map = [
 				'elementskit_line_arrow' => 'icon-down-arrow1',

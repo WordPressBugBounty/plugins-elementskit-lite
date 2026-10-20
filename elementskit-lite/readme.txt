@@ -4,7 +4,7 @@ Tags: Elementor addons, mega menu builder,  header footer builder, elementor add
 Requires at least: 6.0
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 4.0.8
+Stable tag: 4.0.9
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -357,6 +357,16 @@ ElementsKit is brought to you by Wpmet, a name **trusted by 10,00,000 satisfied 
 Visit  [wpmet](https://wpmet.com/?utm_source=org&utm_medium=readme) for essential WordPress [Tutorials, Tips & Tricks](https://wpmet.com/blog)!
 
 == Changelog ==
+= ElementsKit Elementor Addons Version: 4.0.9 (2026-10-20) =
+* Improved: Moved Pro-only One Page Scroll navigation styles to ElementsKit Pro.
+* Improved: Moved Pro-only Nav Menu dropdown indicator icons to ElementsKit Pro.
+* Improved: Opt-in data sharing consent and privacy handling during onboarding.
+* Improved: Privacy Policy links and consent information in admin notices and deactivation feedback modal.
+* Improved: Onboarding "Unlock All & Continue" button now explains which plugins will be installed and activated.
+* Improved: Added a One Page Scroll settings shortcut to the Elementor editor top bar.
+* Improved: Replaced the embedded YouTube video on the Forms dashboard page with a link.
+* Fixed: Video widget popup close button style controls not applying.
+
 = ElementsKit Elementor Addons Version: 4.0.8 (2026-10-11) =
 * Improved: Header Footer compatibility with ShopEngine templates.
 * Improved: Frontend CSS and JavaScript loading for Header Footer templates.

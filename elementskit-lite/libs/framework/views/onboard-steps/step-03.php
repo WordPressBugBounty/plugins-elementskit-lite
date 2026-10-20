@@ -168,11 +168,23 @@
 		<?php echo esc_html__( 'Continue', 'elementskit-lite' ); ?>
 	</a>
 	<a
-	class="ekit-onboard-btn ekit-onboard-pagi-btn next"
+	class="ekit-onboard-btn ekit-onboard-pagi-btn next ekit-onboard-unlock-all"
 	href="#"
+	aria-describedby="ekit-onboard-unlock-all-tooltip"
 	onclick="document.querySelectorAll('.ekit-onboard-plugin-list input[type=checkbox]').forEach(cb => cb.checked = true);"
 	>
 		<?php echo esc_html__( 'Unlock All & Continue', 'elementskit-lite' ); ?>
+		<span class="ekit-onboard-tooltip" onclick="event.preventDefault(); event.stopPropagation();">
+			<svg class="ekit-onboard-tooltip--icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false">
+				<circle cx="8" cy="8" r="6.75" stroke="currentColor" stroke-width="1.5"/>
+				<path d="M8 7.25V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+				<circle cx="8" cy="5" r="0.9" fill="currentColor"/>
+			</svg>
+			<span class="ekit-onboard-tooltip--content" id="ekit-onboard-unlock-all-tooltip" role="tooltip">
+				<strong class="ekit-onboard-tooltip--title"><?php echo esc_html__( 'Unlock all plugins in one click', 'elementskit-lite' ); ?></strong>
+				<?php echo esc_html__( 'Installs and activates all listed plugins that aren\'t already active on your site. Existing active plugins remain unchanged.', 'elementskit-lite' ); ?>
+			</span>
+		</span>
 	</a>
 </div>
 <div class="ekit-onboard-shapes" style="display: none;">
