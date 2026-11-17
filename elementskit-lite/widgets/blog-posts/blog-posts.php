@@ -3168,7 +3168,7 @@ class ElementsKit_Widget_Blog_Posts extends Widget_Base
 
                     <?php if ('elementskit-blog-block-post' == $ekit_blog_posts_layout_style): ?>
                         <div class="<?php echo esc_attr($ekit_blog_posts_layout_style); ?>">
-                            <div class="row no-gutters">
+                            <div class="ekit-row no-gutters">
                                 <?php if ('yes' == $ekit_blog_posts_feature_img && has_post_thumbnail()): ?>
                                     <div class="<?php echo esc_attr($column_size . ' ' . $img_order); ?>">
                                         <a href="<?php the_permalink(); ?>" class="elementskit-entry-thumb">

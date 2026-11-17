@@ -1080,7 +1080,7 @@ class ElementsKit_Widget_Video extends Widget_Base {
 			[
 				'name' => 'ekit_video_popup_btn_typography',
 				'label' =>esc_html__( 'Typography', 'elementskit-lite' ),
-				'selector' => '{{WRAPPER}} a.glow-ripple.ekit-video-popup-btn, {{WRAPPER}} a.glow-ripple.ekit-video-inline-btn',
+				'selector' => '{{WRAPPER}} a.ekit-video-popup-btn, {{WRAPPER}} a.ekit-video-inline-btn',
 				'condition' => [
 					'ekit_video_popup_button_style' => ['text', 'both'],
 					'ekit_video_popup_glow_animation_type' => ['ripple'],
@@ -1093,7 +1093,7 @@ class ElementsKit_Widget_Video extends Widget_Base {
 			[
 				'name' => 'ekit_video_popup_radio_wave_btn_typography',
 				'label' =>esc_html__( 'Typography', 'elementskit-lite' ),
-				'selector' => '{{WRAPPER}} a.glow-radio_wave.ekit-video-popup-btn,{{WRAPPER}} a.glow-radio_wave.ekit-video-inline-btn',
+				'selector' => '{{WRAPPER}} a.ekit-video-popup-btn, {{WRAPPER}} a.ekit-video-inline-btn',
 				'condition' => [
 					'ekit_video_popup_button_style' => ['text', 'both'],
 					'ekit_video_popup_glow_animation_type' => ['radio_wave'],
@@ -1583,6 +1583,24 @@ class ElementsKit_Widget_Video extends Widget_Base {
 				// ],
 			]
 		);
+
+		// Magnific Popup puts the widget's mainClass ("<videoClass>-<widget id>", see video.js)
+		// on both the overlay (.mfp-bg) and the wrapper (.mfp-wrap), so this only targets
+		// this widget's popup. The wrapper must stay one layer above the overlay.
+		$this->add_control(
+			'ekit_video_popup_z_index',
+			[
+				'label' => esc_html__( 'Z-Index', 'elementskit-lite' ),
+				'type' => Controls_Manager::NUMBER,
+				'min' => 0,
+				'step' => 1,
+				'placeholder' => '1042',
+				'selectors' => [
+					'.mfp-bg.mfp-fade-{{ID}}, .mfp-bg.ekit_self_video_wrap_content-{{ID}}' => 'z-index: {{VALUE}};',
+					'.mfp-wrap.mfp-fade-{{ID}}, .mfp-wrap.ekit_self_video_wrap_content-{{ID}}' => 'z-index: calc({{VALUE}} + 1);',
+				],
+			]
+		);
 		$this->end_controls_section();
 
 		$this->start_controls_section(
@@ -1752,7 +1770,60 @@ class ElementsKit_Widget_Video extends Widget_Base {
 				],
 				'default'		 => 'right',
 				'selectors' => [
-					'.mfp-wrap .mfp-close.ekit-video-popup-close' => '{{VALUE}}: 0;',
+					'.mfp-wrap .mfp-close.ekit-video-popup-close' => '{{VALUE}}: var(--ekit-video-popup-close-x, 0);',
+				],
+			]
+		);
+
+		$this->add_responsive_control(
+			'ekit_video_popup_close_icon_offset_top',
+			[
+				'label' => esc_html__( 'Top Offset', 'elementskit-lite' ),
+				'type' => Controls_Manager::SLIDER,
+				'size_units' => [ 'px', '%', 'vh', 'em', 'rem', 'custom' ],
+				'range' => [
+					'px' => [
+						'min' => -200,
+						'max' => 500,
+					],
+					'%' => [
+						'min' => -50,
+						'max' => 100,
+					],
+					'vh' => [
+						'min' => -50,
+						'max' => 100,
+					],
+				],
+				'selectors' => [
+					'.mfp-wrap .mfp-close.ekit-video-popup-close' => 'top: {{SIZE}}{{UNIT}};',
+				],
+			]
+		);
+
+		// Applies to the side picked in "Close Button Position" (right or left).
+		$this->add_responsive_control(
+			'ekit_video_popup_close_icon_offset_x',
+			[
+				'label' => esc_html__( 'Horizontal Offset', 'elementskit-lite' ),
+				'type' => Controls_Manager::SLIDER,
+				'size_units' => [ 'px', '%', 'vw', 'em', 'rem', 'custom' ],
+				'range' => [
+					'px' => [
+						'min' => -200,
+						'max' => 500,
+					],
+					'%' => [
+						'min' => -50,
+						'max' => 100,
+					],
+					'vw' => [
+						'min' => -50,
+						'max' => 100,
+					],
+				],
+				'selectors' => [
+					'.mfp-wrap .mfp-close.ekit-video-popup-close' => '--ekit-video-popup-close-x: {{SIZE}}{{UNIT}};',
 				],
 			]
 		);

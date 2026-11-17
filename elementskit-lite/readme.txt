@@ -4,7 +4,7 @@ Tags: Elementor addons, mega menu builder,  header footer builder, elementor add
 Requires at least: 6.0
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 4.1.0
+Stable tag: 4.2.0
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -359,6 +359,17 @@ ElementsKit is brought to you by Wpmet, a name trusted by 1,000,000+ satisfied u
 Visit  [wpmet](https://wpmet.com/?utm_source=org&utm_medium=readme) for essential WordPress [Tutorials, Tips & Tricks](https://wpmet.com/blog)!
 
 == Changelog ==
+= ElementsKit Elementor Addons Version: 4.2.0 (2026-11-17) =
+* Added: Popup Z-Index control and responsive Top Offset and Horizontal Offset controls for the Video widget popup Close Button.
+* Fixed: Video widget playback now plays only the selected widget's video without starting other videos on the page.
+* Fixed: Video widget self-hosted popup styling, responsiveness on smaller screens, and popup position while scrolling.
+* Fixed: Video widget button typography across all Glow Animation types.
+* Fixed: Lottie widget on-scroll animation not playing.
+* Fixed: Advanced widgets content not rendering until the editor is reloaded.
+* Fixed: Widget Area content not refreshing reliably after editing.
+* Fixed: Blog Posts widget Block layout issue.
+* Security: Lottie widget JSON URL source and JSON file uploads now require the appropriate user capability.
+
 = ElementsKit Elementor Addons Version: 4.1.0 (2026-11-02) =
 * Removed: Unused legacy data migration framework.
 * Removed: Inactive Heartbeat-based migration runner and progress logger.

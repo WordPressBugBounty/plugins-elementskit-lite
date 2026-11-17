@@ -2,9 +2,9 @@
 # This file is distributed under the GPLv3 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: ElementsKit Lite 4.1.0\n"
+"Project-Id-Version: ElementsKit Lite 4.2.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/elementskit-lite\n"
-"POT-Creation-Date: 2026-11-02 10:34:30+00:00\n"
+"POT-Creation-Date: 2026-11-17 06:19:02+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -2272,7 +2272,7 @@ msgstr ""
 #: widgets/social-share/social-share.php:178 widgets/tab/tab.php:392
 #: widgets/team/team.php:172 widgets/team/team.php:244
 #: widgets/team/team.php:1063 widgets/video/video.php:235
-#: widgets/video/video.php:1602
+#: widgets/video/video.php:1620
 msgid "Icon"
 msgstr ""
 
@@ -2451,7 +2451,7 @@ msgstr ""
 #: widgets/testimonial/testimonial.php:2110
 #: widgets/testimonial/testimonial.php:2373
 #: widgets/testimonial/testimonial.php:2423 widgets/video/video.php:1579
-#: widgets/video/video.php:1772 widgets/video/video.php:1841
+#: widgets/video/video.php:1843 widgets/video/video.php:1912
 msgid "Background"
 msgstr ""
 
@@ -3037,7 +3037,7 @@ msgstr ""
 #: widgets/team/team.php:1593 widgets/testimonial/testimonial.php:991
 #: widgets/testimonial/testimonial.php:1826
 #: widgets/testimonial/testimonial.php:1860 widgets/video/video.php:865
-#: widgets/video/video.php:1748 widgets/we-forms/we-forms.php:410
+#: widgets/video/video.php:1766 widgets/we-forms/we-forms.php:410
 #: widgets/wp-forms/wp-forms.php:125 widgets/wp-forms/wp-forms.php:451
 msgid "Right"
 msgstr ""
@@ -3087,7 +3087,7 @@ msgstr ""
 #: widgets/testimonial/testimonial.php:983
 #: widgets/testimonial/testimonial.php:1814
 #: widgets/testimonial/testimonial.php:1852 widgets/video/video.php:857
-#: widgets/video/video.php:1744 widgets/we-forms/we-forms.php:402
+#: widgets/video/video.php:1762 widgets/we-forms/we-forms.php:402
 #: widgets/wp-forms/wp-forms.php:117 widgets/wp-forms/wp-forms.php:443
 msgid "Left"
 msgstr ""
@@ -3285,8 +3285,8 @@ msgstr ""
 #: widgets/testimonial/testimonial.php:1635
 #: widgets/testimonial/testimonial.php:1700
 #: widgets/testimonial/testimonial.php:2359
-#: widgets/testimonial/testimonial.php:2409 widgets/video/video.php:1785
-#: widgets/video/video.php:1855
+#: widgets/testimonial/testimonial.php:2409 widgets/video/video.php:1856
+#: widgets/video/video.php:1926
 msgid "Color"
 msgstr ""
 
@@ -3311,8 +3311,8 @@ msgstr ""
 #: widgets/image-box/image-box.php:830 widgets/ninja-forms/ninja-forms.php:805
 #: widgets/tablepress/tablepress.php:269 widgets/tablepress/tablepress.php:393
 #: widgets/tablepress/tablepress.php:528 widgets/tablepress/tablepress.php:575
-#: widgets/testimonial/testimonial.php:877 widgets/video/video.php:1798
-#: widgets/video/video.php:1869 widgets/we-forms/we-forms.php:567
+#: widgets/testimonial/testimonial.php:877 widgets/video/video.php:1869
+#: widgets/video/video.php:1940 widgets/we-forms/we-forms.php:567
 #: widgets/wp-forms/wp-forms.php:623
 msgid "Border Color"
 msgstr ""
@@ -3495,8 +3495,8 @@ msgstr ""
 #: widgets/testimonial/testimonial.php:1418
 #: widgets/testimonial/testimonial.php:1449
 #: widgets/testimonial/testimonial.php:2454 widgets/video/video.php:904
-#: widgets/video/video.php:1483 widgets/video/video.php:1813
-#: widgets/video/video.php:1884 widgets/we-forms/we-forms.php:133
+#: widgets/video/video.php:1483 widgets/video/video.php:1884
+#: widgets/video/video.php:1955 widgets/we-forms/we-forms.php:133
 #: widgets/we-forms/we-forms.php:468 widgets/wp-forms/wp-forms.php:184
 #: widgets/wp-forms/wp-forms.php:554
 msgid "Border Radius"
@@ -3694,7 +3694,7 @@ msgstr ""
 #: widgets/testimonial/testimonial.php:2000
 #: widgets/testimonial/testimonial.php:2119
 #: widgets/testimonial/testimonial.php:2278 widgets/video/video.php:1120
-#: widgets/video/video.php:1623 widgets/wp-forms/wp-forms.php:425
+#: widgets/video/video.php:1641 widgets/wp-forms/wp-forms.php:425
 #: widgets/wp-forms/wp-forms.php:469
 msgid "Width"
 msgstr ""
@@ -4041,7 +4041,7 @@ msgstr ""
 #: widgets/image-box/image-box.php:1007 widgets/image-box/image-box.php:1211
 #: widgets/image-box/image-box.php:1298 widgets/image-box/image-box.php:1438
 #: widgets/image-comparison/image-comparison.php:457
-#: widgets/lottie/lottie.php:262 widgets/mail-chimp/mail-chimp.php:480
+#: widgets/lottie/lottie.php:273 widgets/mail-chimp/mail-chimp.php:480
 #: widgets/mail-chimp/mail-chimp.php:729 widgets/mail-chimp/mail-chimp.php:1246
 #: widgets/nav-menu/nav-menu.php:462 widgets/nav-menu/nav-menu.php:846
 #: widgets/nav-menu/nav-menu.php:1240 widgets/nav-menu/nav-menu.php:1441
@@ -4064,7 +4064,7 @@ msgstr ""
 #: widgets/testimonial/testimonial.php:1236
 #: widgets/testimonial/testimonial.php:1508
 #: widgets/testimonial/testimonial.php:2352 widgets/video/video.php:1288
-#: widgets/video/video.php:1430 widgets/video/video.php:1765
+#: widgets/video/video.php:1430 widgets/video/video.php:1836
 #: widgets/we-forms/we-forms.php:180 widgets/we-forms/we-forms.php:506
 #: widgets/wp-forms/wp-forms.php:141 widgets/wp-forms/wp-forms.php:493
 msgid "Normal"
@@ -4105,7 +4105,7 @@ msgstr ""
 #: widgets/image-box/image-box.php:1041 widgets/image-box/image-box.php:1233
 #: widgets/image-box/image-box.php:1318 widgets/image-box/image-box.php:1503
 #: widgets/image-comparison/image-comparison.php:514
-#: widgets/lottie/lottie.php:295 widgets/mail-chimp/mail-chimp.php:530
+#: widgets/lottie/lottie.php:306 widgets/mail-chimp/mail-chimp.php:530
 #: widgets/mail-chimp/mail-chimp.php:767 widgets/mail-chimp/mail-chimp.php:1287
 #: widgets/nav-menu/nav-menu.php:105 widgets/nav-menu/nav-menu.php:516
 #: widgets/nav-menu/nav-menu.php:878 widgets/nav-menu/nav-menu.php:1282
@@ -4127,7 +4127,7 @@ msgstr ""
 #: widgets/testimonial/testimonial.php:1273
 #: widgets/testimonial/testimonial.php:1528
 #: widgets/testimonial/testimonial.php:2402 widgets/video/video.php:1319
-#: widgets/video/video.php:1457 widgets/video/video.php:1834
+#: widgets/video/video.php:1457 widgets/video/video.php:1905
 #: widgets/we-forms/we-forms.php:538 widgets/wp-forms/wp-forms.php:592
 msgid "Hover"
 msgstr ""
@@ -4532,7 +4532,7 @@ msgstr ""
 #: widgets/blog-posts/blog-posts.php:1048
 #: widgets/blog-posts/blog-posts.php:2898 widgets/button/button.php:323
 #: widgets/funfact/funfact.php:94 widgets/icon-box/icon-box.php:88
-#: widgets/image-box/image-box.php:787 widgets/lottie/lottie.php:240
+#: widgets/image-box/image-box.php:787 widgets/lottie/lottie.php:251
 #: widgets/nav-menu/nav-menu.php:128 widgets/pricing/pricing.php:108
 #: widgets/pricing/pricing.php:672 widgets/pricing/pricing.php:899
 #: widgets/pricing/pricing.php:1684 widgets/pricing/pricing.php:1837
@@ -4541,7 +4541,7 @@ msgstr ""
 #: widgets/tab/tab.php:388 widgets/tablepress/tablepress.php:78
 #: widgets/tablepress/tablepress.php:94 widgets/tablepress/tablepress.php:231
 #: widgets/tablepress/tablepress.php:358 widgets/tablepress/tablepress.php:441
-#: widgets/video/video.php:1399 widgets/video/video.php:1712
+#: widgets/video/video.php:1399 widgets/video/video.php:1730
 msgid "None"
 msgstr ""
 
@@ -4600,7 +4600,7 @@ msgstr ""
 #: widgets/social/social.php:516 widgets/social-share/social-share.php:609
 #: widgets/tab/tab.php:672 widgets/team/team.php:1691
 #: widgets/testimonial/testimonial.php:1362 widgets/video/video.php:977
-#: widgets/video/video.php:1685
+#: widgets/video/video.php:1703
 msgid "Icon Size"
 msgstr ""
 
@@ -4639,7 +4639,7 @@ msgstr ""
 #: widgets/testimonial/testimonial.php:2023
 #: widgets/testimonial/testimonial.php:2142
 #: widgets/testimonial/testimonial.php:2302 widgets/video/video.php:1151
-#: widgets/video/video.php:1650
+#: widgets/video/video.php:1668
 msgid "Height"
 msgstr ""
 
@@ -4738,7 +4738,7 @@ msgstr ""
 msgid "Left Right Position"
 msgstr ""
 
-#: widgets/blog-posts/blog-posts.php:2629 widgets/lottie/lottie.php:327
+#: widgets/blog-posts/blog-posts.php:2629 widgets/lottie/lottie.php:338
 msgid "Transition"
 msgstr ""
 
@@ -5081,7 +5081,7 @@ msgstr ""
 #: widgets/dual-button/dual-button.php:316
 #: widgets/header-info/header-info.php:91 widgets/heading/heading.php:77
 #: widgets/icon-box/icon-box.php:321 widgets/image-box/image-box.php:143
-#: widgets/lottie/lottie.php:115 widgets/page-list/page-list.php:167
+#: widgets/lottie/lottie.php:126 widgets/page-list/page-list.php:167
 #: widgets/pricing/pricing.php:395 widgets/social/social.php:201
 #: widgets/team/team.php:270 widgets/testimonial/testimonial.php:377
 #: widgets/video/video.php:79
@@ -5136,7 +5136,7 @@ msgstr ""
 msgid "Slides To Scroll"
 msgstr ""
 
-#: widgets/client-logo/client-logo.php:310 widgets/lottie/lottie.php:154
+#: widgets/client-logo/client-logo.php:310 widgets/lottie/lottie.php:165
 #: widgets/testimonial/testimonial.php:671
 msgid "Autoplay"
 msgstr ""
@@ -5226,8 +5226,8 @@ msgid "Hover Background"
 msgstr ""
 
 #: widgets/client-logo/client-logo.php:737
-#: widgets/client-logo/client-logo.php:773 widgets/lottie/lottie.php:268
-#: widgets/lottie/lottie.php:301
+#: widgets/client-logo/client-logo.php:773 widgets/lottie/lottie.php:279
+#: widgets/lottie/lottie.php:312
 msgid "Opacity"
 msgstr ""
 
@@ -6928,7 +6928,7 @@ msgstr ""
 msgid "Image comparison slider"
 msgstr ""
 
-#: widgets/init/enqueue-scripts.php:134 widgets/video/video.php:2136
+#: widgets/init/enqueue-scripts.php:134 widgets/video/video.php:2207
 msgid "Video player"
 msgstr ""
 
@@ -6954,16 +6954,16 @@ msgstr ""
 msgid "Go to slide {{index}}"
 msgstr ""
 
-#: widgets/lottie/json-handler.php:48
+#: widgets/lottie/json-handler.php:72
 msgid "The uploaded"
 msgstr ""
 
-#: widgets/lottie/json-handler.php:50
+#: widgets/lottie/json-handler.php:74
 msgid "file is not supported. Please upload a valid JSON file"
 msgstr ""
 
 #: widgets/lottie/lottie-handler.php:16 widgets/lottie/lottie.php:50
-#: widgets/lottie/lottie.php:252
+#: widgets/lottie/lottie.php:263
 msgid "Lottie"
 msgstr ""
 
@@ -6971,73 +6971,85 @@ msgstr ""
 msgid "Select JSON"
 msgstr ""
 
-#: widgets/lottie/lottie.php:62
-msgid "JSON File"
-msgstr ""
-
-#: widgets/lottie/lottie.php:66
-msgid "JSON URL"
-msgstr ""
-
-#: widgets/lottie/lottie.php:78 widgets/lottie/lottie.php:96
+#: widgets/lottie/lottie.php:69 widgets/lottie/lottie.php:87
 msgid "Discover thousands of"
 msgstr ""
 
-#: widgets/lottie/lottie.php:79 widgets/lottie/lottie.php:97
+#: widgets/lottie/lottie.php:70 widgets/lottie/lottie.php:88
 msgid "Lottie animations"
 msgstr ""
 
-#: widgets/lottie/lottie.php:80 widgets/lottie/lottie.php:98
+#: widgets/lottie/lottie.php:71 widgets/lottie/lottie.php:89
 msgid "ready to use."
 msgstr ""
 
-#: widgets/lottie/lottie.php:137
+#: widgets/lottie/lottie.php:114
+msgid "HTTPS required:"
+msgstr ""
+
+#: widgets/lottie/lottie.php:115
+msgid ""
+"Your site URL starts with http://. When the page is opened over https://, "
+"the browser blocks http:// JSON files, both uploaded files and JSON URLs, "
+"and the animation will not show. Change the WordPress Address and Site "
+"Address to https:// in Settings → General, and use https:// JSON URLs."
+msgstr ""
+
+#: widgets/lottie/lottie.php:148
 msgid "Animation Options"
 msgstr ""
 
-#: widgets/lottie/lottie.php:146 widgets/lottie/lottie.php:243
+#: widgets/lottie/lottie.php:157 widgets/lottie/lottie.php:254
 msgid "Reverse"
 msgstr ""
 
-#: widgets/lottie/lottie.php:164
+#: widgets/lottie/lottie.php:175
 msgid "Start when visible"
 msgstr ""
 
-#: widgets/lottie/lottie.php:175 widgets/video/video.php:632
+#: widgets/lottie/lottie.php:186 widgets/video/video.php:632
 msgid "Loop"
 msgstr ""
 
-#: widgets/lottie/lottie.php:185
+#: widgets/lottie/lottie.php:196
 msgid "Loop Count"
 msgstr ""
 
-#: widgets/lottie/lottie.php:201 widgets/testimonial/testimonial.php:659
+#: widgets/lottie/lottie.php:212 widgets/testimonial/testimonial.php:659
 msgid "Speed"
 msgstr ""
 
-#: widgets/lottie/lottie.php:218
+#: widgets/lottie/lottie.php:229
 msgid "Render Type"
 msgstr ""
 
-#: widgets/lottie/lottie.php:223
+#: widgets/lottie/lottie.php:234
 msgid "SVG"
 msgstr ""
 
-#: widgets/lottie/lottie.php:227
+#: widgets/lottie/lottie.php:238
 msgid "Canvas"
 msgstr ""
 
-#: widgets/lottie/lottie.php:237
+#: widgets/lottie/lottie.php:248
 msgid "On Hover"
 msgstr ""
 
-#: widgets/lottie/lottie.php:241 widgets/video/video.php:281
+#: widgets/lottie/lottie.php:252 widgets/video/video.php:281
 #: widgets/video/video.php:282
 msgid "Play"
 msgstr ""
 
-#: widgets/lottie/lottie.php:242
+#: widgets/lottie/lottie.php:253
 msgid "Pause"
+msgstr ""
+
+#: widgets/lottie/lottie.php:370
+msgid "JSON File"
+msgstr ""
+
+#: widgets/lottie/lottie.php:377
+msgid "JSON URL"
 msgstr ""
 
 #: widgets/mail-chimp/mail-chimp-api.php:189
@@ -7185,7 +7197,7 @@ msgstr ""
 msgid "Use Position"
 msgstr ""
 
-#: widgets/mail-chimp/mail-chimp.php:1043
+#: widgets/mail-chimp/mail-chimp.php:1043 widgets/video/video.php:1808
 msgid "Horizontal Offset"
 msgstr ""
 
@@ -8984,19 +8996,27 @@ msgstr ""
 msgid "Radio Wave Scale"
 msgstr ""
 
-#: widgets/video/video.php:1591
+#: widgets/video/video.php:1593
+msgid "Z-Index"
+msgstr ""
+
+#: widgets/video/video.php:1609
 msgid "Popup Close Button"
 msgstr ""
 
-#: widgets/video/video.php:1739
+#: widgets/video/video.php:1757
 msgid "Close Button Position"
 msgstr ""
 
-#: widgets/video/video.php:1908
+#: widgets/video/video.php:1781
+msgid "Top Offset"
+msgstr ""
+
+#: widgets/video/video.php:1979
 msgid "Player"
 msgstr ""
 
-#: widgets/video/video.php:1919
+#: widgets/video/video.php:1990
 msgid "Aspect Ratio"
 msgstr ""
 
@@ -9110,7 +9130,7 @@ msgstr ""
 #: widgets/pricing/pricing.php:669 widgets/pricing/pricing.php:896
 #: widgets/pricing/pricing.php:1681 widgets/pricing/pricing.php:2240
 #: widgets/pricing/pricing.php:2344 widgets/video/video.php:1396
-#: widgets/video/video.php:1709
+#: widgets/video/video.php:1727
 msgctxt "Border Control"
 msgid "Border Type"
 msgstr ""
@@ -9120,7 +9140,7 @@ msgstr ""
 #: widgets/pricing/pricing.php:673 widgets/pricing/pricing.php:900
 #: widgets/pricing/pricing.php:1685 widgets/pricing/pricing.php:2244
 #: widgets/pricing/pricing.php:2348 widgets/video/video.php:1400
-#: widgets/video/video.php:1713
+#: widgets/video/video.php:1731
 msgctxt "Border Control"
 msgid "Solid"
 msgstr ""
@@ -9130,7 +9150,7 @@ msgstr ""
 #: widgets/pricing/pricing.php:674 widgets/pricing/pricing.php:901
 #: widgets/pricing/pricing.php:1686 widgets/pricing/pricing.php:2245
 #: widgets/pricing/pricing.php:2349 widgets/video/video.php:1401
-#: widgets/video/video.php:1714
+#: widgets/video/video.php:1732
 msgctxt "Border Control"
 msgid "Double"
 msgstr ""
@@ -9140,7 +9160,7 @@ msgstr ""
 #: widgets/pricing/pricing.php:675 widgets/pricing/pricing.php:902
 #: widgets/pricing/pricing.php:1687 widgets/pricing/pricing.php:2246
 #: widgets/pricing/pricing.php:2350 widgets/video/video.php:1402
-#: widgets/video/video.php:1715
+#: widgets/video/video.php:1733
 msgctxt "Border Control"
 msgid "Dotted"
 msgstr ""
@@ -9150,7 +9170,7 @@ msgstr ""
 #: widgets/pricing/pricing.php:676 widgets/pricing/pricing.php:903
 #: widgets/pricing/pricing.php:1688 widgets/pricing/pricing.php:2247
 #: widgets/pricing/pricing.php:2351 widgets/video/video.php:1403
-#: widgets/video/video.php:1716
+#: widgets/video/video.php:1734
 msgctxt "Border Control"
 msgid "Dashed"
 msgstr ""
@@ -9160,7 +9180,7 @@ msgstr ""
 #: widgets/pricing/pricing.php:677 widgets/pricing/pricing.php:904
 #: widgets/pricing/pricing.php:1689 widgets/pricing/pricing.php:2248
 #: widgets/pricing/pricing.php:2352 widgets/video/video.php:1404
-#: widgets/video/video.php:1717
+#: widgets/video/video.php:1735
 msgctxt "Border Control"
 msgid "Groove"
 msgstr ""
@@ -9201,7 +9221,7 @@ msgctxt "Border Control"
 msgid "Icon Container Spacing"
 msgstr ""
 
-#: widgets/pricing/pricing.php:687 widgets/video/video.php:1727
+#: widgets/pricing/pricing.php:687 widgets/video/video.php:1745
 msgctxt "Border Control"
 msgid "Border Width"
 msgstr ""

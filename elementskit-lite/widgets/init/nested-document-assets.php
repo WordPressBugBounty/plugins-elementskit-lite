@@ -394,11 +394,24 @@ class Nested_Document_Assets {
 			}
 		}
 
+		// Popup Modal stores its area as "popup-{widget id}": the shared key comes first
+		// and the widget ID last. Match it exactly by the widget ID, and keep the bare
+		// "popup" key (saved as "popup***time") out of the prefix check below, where it
+		// would pull in the content of every popup on the site.
+		$prefix_keys = array_diff( $keys, array( 'popup' ) );
+
 		// Widget area titles carry an arbitrary suffix after the key, so a prefix
 		// check is still required, but it now only scans the smaller, pre-filtered
 		// widget-area candidate list rather than every elementskit_content post.
 		foreach ( $this->widget_area_candidates as $candidate ) {
 			foreach ( $keys as $key ) {
+				if ( 'popup-' . $key === $candidate['suffix'] ) {
+					$ids[] = $candidate['id'];
+					break;
+				}
+			}
+
+			foreach ( $prefix_keys as $key ) {
 				if ( 0 === strpos( $candidate['suffix'], $key . '-' ) ) {
 					$ids[] = $candidate['id'];
 					break;

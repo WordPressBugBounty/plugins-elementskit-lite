@@ -32,7 +32,7 @@ class Widget_Area extends \Elementor\Base_Data_Control {
 		wp_enqueue_style( 'elementskit-css-widgetarea-control-inspactor' );
 
 		// script
-		wp_register_script( 'elementskit-js-widgetarea-control-inspactor', Init::get_url() . 'assets/js/widgetarea-inspactor.js',  $dependencies, '1.0.0', true );
+		wp_register_script( 'elementskit-js-widgetarea-control-inspactor', Init::get_url() . 'assets/js/widgetarea-inspactor.js',  $dependencies, \ElementsKit_Lite::version(), true );
 		wp_enqueue_script( 'elementskit-js-widgetarea-control-inspactor' );
 	}
 

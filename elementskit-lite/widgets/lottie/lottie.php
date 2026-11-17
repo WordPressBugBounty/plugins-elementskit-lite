@@ -57,16 +57,7 @@ class ElementsKit_Widget_Lottie extends Widget_Base {
                     'label'         => esc_html__( 'Select JSON', 'elementskit-lite' ),
                     'type'          => \Elementor\Controls_Manager::CHOOSE,
                     'default'       => 'file',
-                    'options'       => [
-                        'file'  => [
-                            'title' => esc_html__( 'JSON File', 'elementskit-lite' ),
-                            'icon' => 'eicon-folder-o',
-                        ],
-                        'url'   => [
-                            'title' => esc_html__( 'JSON URL', 'elementskit-lite' ),
-                            'icon' => 'eicon-link',
-                        ],
-                    ]
+                    'options'       => $this->get_source_options(),
                 ]
             );
 
@@ -97,7 +88,8 @@ class ElementsKit_Widget_Lottie extends Widget_Base {
 						esc_html__('Lottie animations' , 'elementskit-lite'),
 						esc_html__('ready to use.' , 'elementskit-lite'),
 					),
-                    'type'          => \Elementor\Controls_Manager::TEXT,
+                    // Same as Elementor Pro: only users who can publish pages may set a JSON URL.
+                    'type'          => $this->current_user_can_use_external_source() ? \Elementor\Controls_Manager::TEXT : \Elementor\Controls_Manager::HIDDEN,
 					'dynamic'       => [
 						'active' => true,
 					],
@@ -108,6 +100,25 @@ class ElementsKit_Widget_Lottie extends Widget_Base {
                     ],
                 ]
             );
+
+            // Media URLs follow the WordPress Address. When it is http:// and the site is
+            // opened over https://, browsers block the JSON (mixed content) and nothing shows.
+            // No condition: the notice sits under both the file picker and the URL field.
+            if ( 'https' !== wp_parse_url( site_url(), PHP_URL_SCHEME ) ) {
+                $this->add_control(
+                    'ekit_lottie_https_notice',
+                    [
+                        'type'            => \Elementor\Controls_Manager::RAW_HTML,
+                        'raw'             => sprintf(
+                            '<strong>%1$s</strong> %2$s',
+                            esc_html__( 'HTTPS required:', 'elementskit-lite' ),
+                            esc_html__( 'Your site URL starts with http://. When the page is opened over https://, the browser blocks http:// JSON files, both uploaded files and JSON URLs, and the animation will not show. Change the WordPress Address and Site Address to https:// in Settings → General, and use https:// JSON URLs.', 'elementskit-lite' )
+                        ),
+                        'content_classes' => 'elementor-panel-alert elementor-panel-alert-warning',
+                        'render_type'     => 'ui',
+                    ]
+                );
+            }
 
             $this->add_control(
                 'ekit_lottie_link_check',
@@ -344,6 +355,121 @@ class ElementsKit_Widget_Lottie extends Widget_Base {
         $this->insert_pro_message();
     }
 
+    /**
+     * Same rule as Elementor Pro: the JSON URL source is only offered to users
+     * who can publish pages. Saves are checked server-side as well, see
+     * ElementsKit_Json_Handler::restrict_lottie_sources().
+     */
+    protected function current_user_can_use_external_source() {
+        return \ElementsKit_Lite\ElementsKit_Json_Handler::current_user_can_manage_json();
+    }
+
+    protected function get_source_options() {
+        $options = [
+            'file' => [
+                'title' => esc_html__( 'JSON File', 'elementskit-lite' ),
+                'icon'  => 'eicon-folder-o',
+            ],
+        ];
+
+        if ( $this->current_user_can_use_external_source() ) {
+            $options['url'] = [
+                'title' => esc_html__( 'JSON URL', 'elementskit-lite' ),
+                'icon'  => 'eicon-link',
+            ];
+        }
+
+        return $options;
+    }
+
+    /**
+     * Resolve the animation JSON URL for the selected source.
+     *
+     * Media uploads are resolved from the attachment ID so a hand-edited `url`
+     * cannot point anywhere else. Returns '' when nothing valid is set.
+     */
+    protected function get_lottie_path( $settings ) {
+        return self::match_request_scheme( $this->get_raw_lottie_path( $settings ) );
+    }
+
+    /**
+     * On an https request, serve this site's own JSON over https too.
+     *
+     * wp_get_attachment_url() upgrades to https on the frontend but not in
+     * wp-admin, where the editor renders the widget. With an http:// WordPress
+     * Address and the editor opened over https://, the editor preview got an
+     * http:// JSON URL, the browser blocked it as mixed content and the
+     * animation did not show, while the frontend worked.
+     */
+    protected static function match_request_scheme( $url ) {
+        if ( '' === $url || ! is_ssl() || 0 !== strpos( $url, 'http://' ) ) {
+            return $url;
+        }
+
+        $host      = strtolower( (string) wp_parse_url( $url, PHP_URL_HOST ) );
+        $own_hosts = array_map( 'strtolower', array_filter( [
+            wp_parse_url( home_url(), PHP_URL_HOST ),
+            wp_parse_url( site_url(), PHP_URL_HOST ),
+        ] ) );
+
+        return in_array( $host, $own_hosts, true ) ? set_url_scheme( $url, 'https' ) : $url;
+    }
+
+    protected function get_raw_lottie_path( $settings ) {
+        if ( isset( $settings['ekit_lottie_type'] ) && 'url' === $settings['ekit_lottie_type'] ) {
+            return ! empty( $settings['ekit_lottie_url'] ) ? self::sanitize_lottie_url( $settings['ekit_lottie_url'] ) : '';
+        }
+
+        $media = isset( $settings['ekit_lottie_json'] ) && is_array( $settings['ekit_lottie_json'] ) ? $settings['ekit_lottie_json'] : [];
+
+        if ( ! empty( $media['id'] ) ) {
+            $file_url = \ElementsKit_Lite\ElementsKit_Json_Handler::get_json_attachment_url( $media['id'] );
+
+            if ( $file_url ) {
+                return self::sanitize_lottie_url( $file_url );
+            }
+        }
+
+        // No usable attachment (e.g. a template imported from another site).
+        if ( ! empty( $media['url'] ) ) {
+            return self::sanitize_lottie_url( $media['url'] );
+        }
+
+        return '';
+    }
+
+    /**
+     * Return the URL when it is an http(s) URL or a site-relative path, otherwise ''.
+     */
+    public static function sanitize_lottie_url( $url ) {
+        if ( ! is_string( $url ) ) {
+            return '';
+        }
+
+        $url = trim( $url );
+
+        if ( '' === $url ) {
+            return '';
+        }
+
+        // Site-relative paths ("/wp-content/uploads/…") are left for the browser to resolve.
+        if ( '/' === $url[0] && ( ! isset( $url[1] ) || '/' !== $url[1] ) ) {
+            return esc_url_raw( $url );
+        }
+
+        if ( 0 === strpos( $url, '//' ) ) {
+            $url = ( is_ssl() ? 'https:' : 'http:' ) . $url;
+        }
+
+        $scheme = wp_parse_url( $url, PHP_URL_SCHEME );
+
+        if ( ! $scheme || ! in_array( strtolower( $scheme ), [ 'http', 'https' ], true ) ) {
+            return '';
+        }
+
+        return esc_url_raw( $url, [ 'http', 'https' ] );
+    }
+
     protected function render() {
         echo '<div class="ekit-wid-con" >';
             $this->render_raw();
@@ -368,10 +494,10 @@ class ElementsKit_Widget_Lottie extends Widget_Base {
         );
 
 
-        if ( !empty($settings['ekit_lottie_json']['url']) ):
-            $this->add_render_attribute( 'wrapper', 'data-path', $settings['ekit_lottie_json']['url'] );
-        else:
-            $this->add_render_attribute( 'wrapper', 'data-path', $settings['ekit_lottie_url'] );
+        $lottie_path = $this->get_lottie_path( $settings );
+
+        if ( '' !== $lottie_path ):
+            $this->add_render_attribute( 'wrapper', 'data-path', $lottie_path );
         endif;
 
 		if ( isset($settings['ekit_lottie_loop_count']['size']) && is_numeric($settings['ekit_lottie_loop_count']['size']) ):

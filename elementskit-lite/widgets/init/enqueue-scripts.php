@@ -88,7 +88,7 @@ class Enqueue_Scripts {
 
 		// register scripts for lottie widget
 		wp_register_script( 'lottie', \ElementsKit_Lite::plugin_url() . 'assets/libs/lottie/lottie.min.js', [], \ElementsKit_Lite::version(), true );
-		wp_register_script( 'lottie-init', \ElementsKit_Lite::widget_url() . 'init/assets/js/lottie.init.js', ['lottie', 'elementor-frontend'], \ElementsKit_Lite::version(), true );
+		wp_register_script( 'lottie-init', \ElementsKit_Lite::widget_url() . 'init/assets/js/lottie.init.js', ['lottie', 'elementor-frontend', 'ekit-core'], \ElementsKit_Lite::version(), true );
 
 		// Nav menu & vertical menu widget script
 		wp_register_script( 'ekit-menu', \ElementsKit_Lite::widget_url() . 'init/assets/js/nav-menu.js', ['jquery'], \ElementsKit_Lite::version(), true );
